@@ -4,12 +4,16 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import MeusPedidos from './pages/MeusPedidos';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
 function App() {
+
+
+
+
   return (
     <div className="App">
 
