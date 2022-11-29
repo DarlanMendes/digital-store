@@ -1,5 +1,5 @@
 
-import './App.css';
+import styles from  './App.module.scss';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className={styles}>
 
 
       <Header />

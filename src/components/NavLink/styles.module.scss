@@ -1,0 +1,26 @@
+
+
+.navLinkContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    gap: 32px;
+    width:423px;
+    list-style-type: none;
+    
+    .navLink {
+        
+        a{
+            text-decoration: none;
+            color:#474747;
+            font-weight: 400;
+            padding: 4px 0;
+        }
+        .rotaAtivada{
+            color:#C92071;
+            font-weight: 700;
+            border-bottom: 2px solid #C92071;
+        }
+    }
+}
