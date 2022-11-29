@@ -1,3 +1,5 @@
+import Botao from "../Botao";
+
 import tshirt from "../assets/t-shit.png";
 
 import styles from "./styles.module.scss";
