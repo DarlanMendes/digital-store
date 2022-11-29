@@ -1,23 +1,22 @@
 import Botao from "../Botao";
-
-import tshirt from "../assets/t-shit.png";
+import DestaqueDesconto from "../DestaqueDesconto";
 
 import styles from "./styles.module.scss";
 
-export default function Destaques() {
+export default function CardDestaques(props) {
 	return (
-		<div className={styles.container}>
-			<div className={styles.card}>
-				<div className={styles.leftSide}>
-					<span className={styles.cardDiscount}>
-						<p>30% OFF</p>
-					</span>
-					<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
-					<button>Comprar</button>
-				</div>
-				<div className="rightSide">
-					<img src={tshirt} alt="camiseta" />
-				</div>
+		<div
+			className={styles.CardContainer}
+			style={{
+				backgroundImage: props.productImage,
+				backgroundRepeat: "no-repeat",
+				backgroundPosition: "right bottom",
+			}}
+		>
+			<div>
+				<DestaqueDesconto texto={"30% OFF"} />
+				<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
+				<Botao texto={"Compra"} cor={"#f5f5f5"} largura={"114px"} />
 			</div>
 		</div>
 	);

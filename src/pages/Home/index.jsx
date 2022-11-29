@@ -1,9 +1,9 @@
 import { mock } from "../../mockup/server.js";
 import Banner from "../../components/Banner/";
-import Destaques from "../../components/Destaques/";
 import ProdutosHome from "../../components/ProdutosHome";
 import OfertaEspecial from "../../components/OfertaEspecial/index.jsx";
 import styles from "./styles.module.scss";
+import CardDestaques from "../../components/CardDestaques/index.jsx";
 
 export default function Home() {
 	let mockup = mock;
@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div className={styles.homeContainer}>
 			<Banner />
-			<Destaques />
+			<CardDestaques />
 			<ProdutosHome />
 			<OfertaEspecial />
 		</div>
