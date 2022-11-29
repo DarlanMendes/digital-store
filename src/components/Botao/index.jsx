@@ -1,10 +1,13 @@
 import styles from "./styles.module.scss";
-
 export default function Botao(props) {
 	return (
 		<button
 			className={styles.botao}
-			style={{ backgroundColor: props.cor, width: props.largura }}
+			style={{
+				backgroundColor: props.corFundo,
+				width: props.largura,
+				color: props.cor,
+			}}
 		>
 			{props.texto}
 		</button>
