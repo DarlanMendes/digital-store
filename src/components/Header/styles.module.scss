@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;602&display=swap');
+
+
+.imgContainer {
+    width: 33px; 
+    height: 33px; 
+    position: absolute; 
+    margin-top: 47px; 
+    margin-left: 104px; 
+    margin-right: 1303px;
+}
+
+
+.logo {
+    width: 212px;
+    height: 44px;
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 145px;
+    margin-right: 1083px;
+    font-size: 35.5px;
+    line-height: 44px;
+    color: #C92071;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.inputBuscaHome {
+    width: calc(559px - 41px);
+    height: 28px;
+    position: absolute;
+    margin-top: 34px;
+    margin-left: 384px;
+    margin-right: 473px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(71, 71, 71, 0.04);
+    padding: 16px 17px 16px 24px;
+    
+    ::placeholder {
+        color: rgb(102, 102, 102, 0.6);
+    }
+}
+
+.containerInputBusca {
+    position: absolute;
+}
+
+.search {
+    position: absolute;
+}
+
+.icon {
+    position: absolute;
+    margin-top: 54.78px;
+    margin-left: 905.78px;
+    margin-right: 516.24px;
+    width: 20px;
+    height: 20px;
+    size: 18px;
+}
+
