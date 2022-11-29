@@ -2,11 +2,11 @@
 
 
 .imgContainer {
-    width: 33px; 
-    height: 33px; 
-    position: absolute; 
-    margin-top: 47px; 
-    margin-left: 104px; 
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 104px;
     margin-right: 1303px;
 }
 
@@ -38,9 +38,14 @@
     border-radius: 8px;
     background-color: rgb(71, 71, 71, 0.04);
     padding: 16px 17px 16px 24px;
-    
+
     ::placeholder {
         color: rgb(102, 102, 102, 0.6);
+    }
+
+    &:focus {
+        outline: 0px;
+        box-shadow: 0 0 0 0;
     }
 }
 
@@ -61,4 +66,3 @@
     height: 20px;
     size: 18px;
 }
-
