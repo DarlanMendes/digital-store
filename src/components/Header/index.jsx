@@ -27,12 +27,12 @@ export default function Header() {
                 </div>
             </IconContext.Provider>
             <div className={styles.divBotaoEntrar}>
-                <Botao cor="#C92071" texto="Entrar" largura="114px" />
+                <Botao corFundo="#C92071" texto="Entrar" largura="114px" />
             </div>
             <div className={styles.divCadastro}>
                 Cadastre-se
             </div>
-                <NavLink style={{marginTop:"136px"}}/>
+                <NavLink/>
         </div>
     </div>)
 }
