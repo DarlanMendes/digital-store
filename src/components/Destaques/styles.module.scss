@@ -3,7 +3,7 @@
 }
 
 .CardContainer {
-	display: flex;
+	// display: flex;
 	background: #d8e3f2;
 	width: 405px;
 	height: 251px;
@@ -21,4 +21,9 @@
 	line-height: 36px;
 	letter-spacing: 1px;
 	color: #1f1f1f;
+}
+
+.leftSide {
+	position: relative;
+	top: -20px;
 }
