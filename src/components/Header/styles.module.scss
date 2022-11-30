@@ -19,6 +19,7 @@
     margin-left: 145px;
     margin-right: 1083px;
     font-size: 35.5px;
+    font-weight: 600;
     line-height: 44px;
     color: #C92071;
     font-family: 'Inter', sans-serif;
@@ -77,6 +78,7 @@
 }
 
 .divCadastro{ 
+    text-underline-offset: 2px;
     position: absolute;
     left: 991px;
     top:50px;
