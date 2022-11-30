@@ -6,7 +6,7 @@ export default function Produtos() {
         <div className={estilo.container}>
             <div className={estilo.conteudo}>
                 <div>
-                    Resultados para "Tenis" - "" Produtos
+                    Resultados para "Tenis" - "" Produtos:
                 </div>
                 <div>
                     <label>Ordenar por: </label> 
