@@ -1,0 +1,45 @@
+.ProdutoGeral {
+    .Produto {
+        display: flex;
+        flex-direction: column;
+
+        .caixaImagem {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 292px;
+            height: 321px;
+            background-color: #FFFFFF;
+            box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
+            border-radius: 4px;
+
+            .ImagemProduto {
+                width: 248px;
+            }
+        }
+        .TipoProduto {
+            width: 35px;
+            height: 24px;
+            color: #8F8F8F;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 18px;
+        }
+        .NomeProduto {
+            width: 283px;
+            height: 38px;
+            color: #474747;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .PrecoProduto {
+            width: 63px;
+            height: 38px;
+            color: #1F1F1F;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}
