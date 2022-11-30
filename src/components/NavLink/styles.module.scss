@@ -3,10 +3,12 @@
 .navLinkContainer {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin-top: 136px;
+    margin-left:60px;
     justify-content: space-between;
     gap: 32px;
     width:423px;
+    height: 28px;
     list-style-type: none;
     
     .navLink {
