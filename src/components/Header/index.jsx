@@ -2,6 +2,8 @@ import logo from '../../assets/images/logo.png'
 import styles from './styles.module.scss'
 import { CiSearch } from 'react-icons/ci'
 import { IconContext } from "react-icons";
+import NavLink from "../NavLink";
+import Botao from "../Botao";
 
 export default function Header() {
 
@@ -9,7 +11,7 @@ export default function Header() {
         {/* <div style={location.pathname==="/home" && {color:"red"}}>
             home
         </div> */}
-        <div style={{ width: "1440px", height: "192px", left: "0px", top: "0px" }}>
+        <div style={{ width: "1440px", height: "192px", left: "0px", top: "0px", display: "flex" }}>
             <div className={styles.imgContainer}>
                 <img src={logo} alt="" />
             </div>
@@ -24,6 +26,13 @@ export default function Header() {
                     <CiSearch />
                 </div>
             </IconContext.Provider>
+            <div className={styles.divBotaoEntrar}>
+                <Botao cor="#C92071" texto="Entrar" largura="114px" />
+            </div>
+            <div className={styles.divCadastro}>
+                Cadastre-se
+            </div>
+                <NavLink style={{marginTop:"136px"}}/>
         </div>
     </div>)
 }
