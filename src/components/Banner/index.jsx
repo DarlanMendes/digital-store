@@ -25,6 +25,7 @@ const Banner = () => {
 
 
   return (
+
     <div className={styles.bannerContainer}>
       <Carousel cols={1}
         rows={1}
@@ -32,66 +33,58 @@ const Banner = () => {
         showDots={true}
         dot={MyDot}
         loop={true}
-        containerStyle={{height: "681px"}}
-       
+        containerStyle={{ height: "681px" }}
+        hideArrow={true}
+
       >
-
         <Carousel.Item >
-          <div style={{ display: "flex", alignItems:'center', justifyContent:'center'}}>
-            <div style={{ height: 'calc(681px - 124px)', width: 'calc(90vw - 1000px)', paddingTop: '124px', paddingLeft: '100px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '0' }}>
-              <h2 style={{ fontSize: '16px', fontWeight: '700', color: '#F6AA1C', margin: '0', marginBottom: '20px' }}>Melhores ofertas personalizadas</h2>
-              <h1 style={{ fontSize: '64px', fontWeight: '800', color: '#1F1F1F', fontFamily: 'Inter', width: '510px', margin: '0', marginBottom: '20px', lineHeight: '66px' }}>Queima de stoque Nike 🔥</h1>
-              <p style={{ fontSize: '18px', fontWeight: '400', color: "#474747", fontFamily: 'Inter', width: '495px', margin: '0', marginBottom: '40px', height: '68px', lineHeight: '34px' }}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
               <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
             </div>
-
-            <div style={{ width: "935.61px", height: "650px" }}>
+            <div className={styles.divImageCarouselItem}>
               <img src={tenis} />
             </div>
-
+            <div style={{ width: '140px', height: '140px', padding: '0px', margin: '0px', position: 'absolute', top: '78px', right: '37px', }}>
+              <img src={ornament} />
+            </div>
           </div>
-
         </Carousel.Item>
         <Carousel.Item >
-          <div style={{ display: "flex" }}>
-            <div style={{ height: '681px', width: 'calc(100vw - 1000px)', paddingTop: '124px', paddingLeft: '100px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '0' }}>
-              <h2 style={{ fontSize: '16px', fontWeight: '700', color: '#F6AA1C', margin: '0', marginBottom: '20px' }}>Melhores ofertas personalizadas</h2>
-              <h1 style={{ fontSize: '64px', fontWeight: '800', color: '#1F1F1F', fontFamily: 'Inter', width: '510px', margin: '0', marginBottom: '20px', lineHeight: '66px' }}>Queima de stoque Nike 🔥</h1>
-              <p style={{ fontSize: '18px', fontWeight: '400', color: "#474747", fontFamily: 'Inter', width: '495px', margin: '0', marginBottom: '40px', height: '68px', lineHeight: '34px' }}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
               <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
             </div>
-
-            <div style={{ width: "835.61px", height: "650px" }}>
+            <div className={styles.divImageCarouselItem}>
               <img src={tenis} />
             </div>
-
+            <div className={styles.divOrnamentCarousel}>
+              <img src={ornament} />
+            </div>
           </div>
         </Carousel.Item>
-
         <Carousel.Item >
-          <div style={{ display: "flex" }}>
-            <div style={{ height: '681px', width: 'calc(100vw - 1000px)', paddingTop: '124px', paddingLeft: '100px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '0' }}>
-              <h2 style={{ fontSize: '16px', fontWeight: '700', color: '#F6AA1C', margin: '0', marginBottom: '20px' }}>Melhores ofertas personalizadas</h2>
-              <h1 style={{ fontSize: '64px', fontWeight: '800', color: '#1F1F1F', fontFamily: 'Inter', width: '510px', margin: '0', marginBottom: '20px', lineHeight: '66px' }}>Queima de stoque Nike 🔥</h1>
-              <p style={{ fontSize: '18px', fontWeight: '400', color: "#474747", fontFamily: 'Inter', width: '495px', margin: '0', marginBottom: '40px', height: '68px', lineHeight: '34px' }}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
               <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
             </div>
-
-            <div style={{ width: "835.61px", height: "650px" }}>
+            <div className={styles.divImageCarouselItem}>
               <img src={tenis} />
             </div>
-
+            <div className={styles.divOrnamentCarousel}>
+              <img src={ornament} />
+            </div>
           </div>
         </Carousel.Item>
-
-
-
-
-
-
-
-
-
       </Carousel>
     </div>
   )
