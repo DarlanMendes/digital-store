@@ -1,7 +1,8 @@
-export default function ProdutoHome(){
-    return(
-        <>
-        Emerson/emanuel
-        </>
+
+export default function ProdutoHome() {
+    return (<div>
+
+        teste
+    </div>
     )
 }
