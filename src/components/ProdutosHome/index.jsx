@@ -2,7 +2,7 @@
 export default function ProdutoHome() {
     return (<div>
 
-        teste
+        teste2
     </div>
     )
 }
