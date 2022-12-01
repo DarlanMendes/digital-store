@@ -3,10 +3,32 @@ import styles from './styles.module.scss'
 import tenis from "./tenis1.png"
 import ornament from "./Ornament.png"
 import Botao from '../Botao'
+import { useEffect, useState } from 'react'
 
 
 
 const Banner = () => {
+  const [widthButton, setWidthButton] = useState('200px')
+
+  useEffect(() => {
+    checkSize()
+  })
+
+
+  window.addEventListener("resize", () => {
+    checkSize()
+  })
+
+  const checkSize= () => {
+    if (window.innerWidth < 500) {
+      setWidthButton('80vw');
+    } else {
+      setWidthButton('200px');
+    }
+  }
+
+
+
 
 
   const MyDot = ({ isActive }) => (
@@ -35,6 +57,10 @@ const Banner = () => {
         loop={true}
         containerStyle={{ height: "681px" }}
         hideArrow={true}
+        responsiveLayout={[
+          { breakpoint: 462, cols: 1, rows: 1, gap: 2 }
+        ]}
+        mobileBreakpoint={462}
 
       >
         <Carousel.Item >
@@ -42,27 +68,11 @@ const Banner = () => {
             <div className={styles.divTextoCarouselItem}>
               <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
               <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
-              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
+              <div className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</div>
+              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={widthButton} style={{ width: '90vw !important' }} />
             </div>
             <div className={styles.divImageCarouselItem}>
-              <img src={tenis} />
-            </div>
-            <div style={{ width: '140px', height: '140px', padding: '0px', margin: '0px', position: 'absolute', top: '78px', right: '37px', }}>
-              <img src={ornament} />
-            </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item >
-          <div className={styles.divItemCarousel}>
-            <div className={styles.divTextoCarouselItem}>
-              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
-              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
-              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
-            </div>
-            <div className={styles.divImageCarouselItem}>
-              <img src={tenis} />
+              <img src={tenis} className={styles.tenis} />
             </div>
             <div className={styles.divOrnamentCarousel}>
               <img src={ornament} />
@@ -78,7 +88,23 @@ const Banner = () => {
               <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
             </div>
             <div className={styles.divImageCarouselItem}>
-              <img src={tenis} />
+              <img src={tenis} className={styles.tenis} />
+            </div>
+            <div className={styles.divOrnamentCarousel}>
+              <img src={ornament} />
+            </div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item >
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
+            </div>
+            <div className={styles.divImageCarouselItem}>
+              <img src={tenis} className={styles.tenis} />
             </div>
             <div className={styles.divOrnamentCarousel}>
               <img src={ornament} />
