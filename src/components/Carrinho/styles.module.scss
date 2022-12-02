@@ -1,6 +1,8 @@
 .carrinho{
     font-size:18.5px;
     color:#c92071;
+    margin-left: -10px;
+    margin-top: -10px;
     
 }
 .qtdComprasAdicionadas{
@@ -11,10 +13,10 @@
     width:13px;
     background-color: #c92071;
     border-radius:100%;
-    position: absolute;
-    left:10px;
-    top:-7px;
     padding: 2px;
+    position: relative;
+    top:5px;
+    
     span{
         color:white;
         font-size: 12px;

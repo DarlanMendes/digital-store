@@ -9,7 +9,8 @@ import Carrinho from "../Carrinho"
 export default function Header() {
 
         return (
-
+        
+        
                 <div className={styles.centralizar}>
 
 
