@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;602&display=swap');
+
+
+.inputContainer {
+    height: 60px;
+    width: 38.57vw;
+    display: flex;
+    flex-direction: row;
+
+    .inputBuscaHome {
+        // width: calc(559px - 41px);
+        width: 35.97vw;
+        height: 28px;
+        border-radius: 8px;
+        background-color: rgb(71, 71, 71, 0.04);
+        padding: 16px 17px 16px 24px;
+        margin-left: 1.80vw;
+        border: none;
+
+        ::placeholder {
+            color: rgb(102, 102, 102, 0.6);
+        }
+
+        &:focus {
+            outline: 0px;
+            box-shadow: 0 0 0 0;
+        }
+    }
+
+    .icon {
+        font-size: 20px;
+        position: relative;
+        right: 28px;
+        top: 20.78px;
+        color: rgb(102, 102, 102);
+    }
+}
+
+.topoHeader {
+    display: flex;
+    flex-direction: row;
+
+    .imgContainer {
+        height: 60px;
+        width: 20.7vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .imagemLogo {
+            width: 2.29vw;
+
+        }
+
+        .tituloLogo {
+            height: 60px;
+            margin-left: 0.55vw;
+            font-size: 2.52vw;
+            font-weight: 600;
+            line-height: 44px;
+            color: #C92071;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+    }
+
+}
+
+.containerHeader {
+    width: 85.56vw;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    align-items: center;
+}
+
+
+.divBotaoEntrar {
+    margin-left: 2.07vw;
+}
+
+
+
+.botoesContainer{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    margin-left: 3.31vw;
+}
+
+.divCadastro {
+    text-underline-offset: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.10vw;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-decoration-line: underline;
+    color: #474747;
+    white-space: nowrap;
+}
+
+.divNavLink {
+    padding-top: 40px;
+    width: 85.56vw;
+}
+
+.Carrinho {
+  margin-left: 5.02vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+}

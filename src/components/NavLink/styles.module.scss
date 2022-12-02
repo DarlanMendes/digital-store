@@ -3,11 +3,13 @@
 .navLinkContainer {
     display: flex;
     flex-direction: row;
-    margin: 0;
     justify-content: space-between;
     gap: 32px;
     width:423px;
+    height: 28px;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     
     .navLink {
         
