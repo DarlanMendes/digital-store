@@ -2,3 +2,9 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: none;
+}

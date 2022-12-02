@@ -85,7 +85,7 @@
 
 
 
-.botoesContainer{
+.botoesContainer {
     display: flex;
     flex-direction: row;
     height: 60px;
@@ -112,16 +112,37 @@
 }
 
 .Carrinho {
-  margin-left: 5.02vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    margin-left: 5.02vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.centralizar{
+.centralizar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start; 
+    justify-content: start;
+}
+
+@media (max-width:610px) {
+    // .inputContainer {
+    //     width: auto;
+    //     .inputBuscaHome {
+    //         display: none;
+    //     }
+
+    // }
+
+    // .imgContainer {
+    //     width: auto;
+       
+
+    //     .tituloLogo {
+            
+    //     }
+    // }
+
+
 }
