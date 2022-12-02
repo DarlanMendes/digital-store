@@ -5,12 +5,12 @@ export default function Produtos() {
     return (
         <div className={estilo.container}>
             <div className={estilo.conteudo}>
-                <div>
-                    Resultados para "Tenis" - "" Produtos:
+                <div className={estilo.tituloResultado}>
+                    Resultados para <span>"Tenis"</span> - <span className={estilo.resultado}>"389" Produtos</span>
                 </div>
-                <div>
-                    <label>Ordenar por: </label> 
-                    <select name="Ordenar porL:" id="">
+                <div className={estilo.containerOrdenar}>
+                    <label className={estilo.tituloOrdenar}>Ordenar por:  </label> 
+                    <select className={estilo.listChoiceObjects} name="Ordenar porL:" id="">
                         <option value="">Mais relevantes</option>
                         <option value="">Mais relevantes</option>
                         <option value="">Mais relevantes</option>
