@@ -1,0 +1,52 @@
+*{
+    color: #474747;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
+    width: 308px;
+    height: 720px;
+    h5.titulo{
+        font-size: 16px;
+        margin: 0 0 20px 0;
+    }
+    h5.subtitulos{
+        margin: 20px 0 10px 0;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    .colunaCheckbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px 30px 0 30px;
+        hr{
+            line-height: 1px;
+            width: 248px;
+            margin: 0;
+        }
+        input[type="checkbox"] {
+            vertical-align: middle;
+            position: relative;
+            margin: 0 10px 0 0;
+            width: 22px;
+            height: 22px;
+        }
+        
+        div {
+            font-weight: 500;
+            font-size: 14px;
+            text-align:inherit;
+            height: 22px;
+            margin: 0 0 10px;
+        }
+
+    }
+
+    ;
+}
+
+;
