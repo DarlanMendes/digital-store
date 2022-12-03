@@ -32,6 +32,7 @@
 
 .icones {
 	display: flex;
+	align-items: center;
 	justify-content: space-around;
 	width: 712px;
 	height: 138px;
@@ -41,13 +42,17 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+
 	width: 104px;
 	height: 104px;
 
 	img {
 		// width: 64px;
 		// height: 63.92px;
+		// border-radius: 50%;
+
 		border-radius: 50%;
+
 		background: #e5e5e5;
 		// padding: 10px;
 	}

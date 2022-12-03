@@ -28,23 +28,19 @@ export default function CardDestaques() {
 				<div className={styles.icones}>
 					<div className={styles.iconeItem}>
 						<img src={camiseta} alt="camiseta" />
-						<p>Camisetas</p>
+						<span>Camisetas</span>
 					</div>
 					<div className={styles.iconeItem}>
-						<img
-							src={calça}
-							alt="calça"
-							style={{ width: "50px", height: "64px" }}
-						/>
-						<p>Calças</p>
+						<img src={calça} alt="calça" />
+						<span>Calças</span>
 					</div>
 					<div className={styles.iconeItem}>
 						<img src={fone} alt="fone" />
-						<p>Headphones</p>
+						<span>Headphones</span>
 					</div>
 					<div className={styles.iconeItem}>
 						<img src={tenis} alt="tenis" />
-						<p>Tenis</p>
+						<span>Tenis</span>
 					</div>
 				</div>
 			</div>
