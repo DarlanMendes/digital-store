@@ -1,7 +1,7 @@
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
- .
+
 
 
 
