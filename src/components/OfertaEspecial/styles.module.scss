@@ -11,7 +11,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // width: 573px;
+        //max-width: 573px;
         width: 39.54vw;
         height:466px;
         padding-left: 0 4.28vw 0 3.58vw ;
@@ -59,7 +59,7 @@
     }
 
 }
-@media (max-width:1200px){
+@media (max-width:900px){
     .ofertaEspecialContainer{
         height:701px;
         display:flex;
