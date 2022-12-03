@@ -1,12 +1,12 @@
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
-import { AiFillCode } from "react-icons/ai";
+ .
 
 
 
 import { IconContext } from "react-icons";
-
+import logoDigital from '../../assets/images/logo-digital.png'
 
 import styles from "./styles.module.scss"
 
@@ -15,17 +15,17 @@ export default function Footer() {
         <div className={styles.footercontainer}>
             <div className={styles.subcontainer}>
                 <div className={styles.subgrup1}>
-                    
-                    <IconContext.Provider value={{ color: "#FFFFFF", size: "33px"}}>
-                            <div style={{borderRadius: "10px",marginBottom:"30px",whiteSpace: "nowrap", display: "flex" ,alignItems:" center"}}>
-                                <AiFillCode  /><span className={styles.subgruptitle}>Digital Store</span>
-                            </div>
-                        </IconContext.Provider> 
-                    <div style={{maxWidth:"307px"}}>
-                    <span >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+
+                  
+                    <div style={{ borderRadius: "10px", marginBottom: "30px", whiteSpace: "nowrap", display: "flex", alignItems: " center" }}>
+                        <img src={logoDigital} alt="logo-digital" /> <span className={styles.subgruptitle}>Digital Store</span>
+                    </div>
+                   
+                    <div style={{ maxWidth: "307px" }}>
+                        <span >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
                     </div>
                     <div className={styles.subgrupicons}>
-                    <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
+                        <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
                             <div>
                                 <FaFacebookF />
                             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                             </div>
                         </IconContext.Provider>
 
-                  
+
                     </div>
 
                 </div>
@@ -82,10 +82,10 @@ export default function Footer() {
                 <div className={styles.subgrup3}>
                     <h3 className={styles.subtitle}>
                         Contato
-                    </h3>  <div style={{maxWidth:"307px"}}>
-                    <span>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</span>
-                    </div>  <div style={{maxWidth:"307px"}}>
-                    <div className={styles.phone}>(85) 3051-3411</div>
+                    </h3>  <div style={{ maxWidth: "307px" }}>
+                        <span>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</span>
+                    </div>  <div style={{ maxWidth: "307px" }}>
+                        <div className={styles.phone}>(85) 3051-3411</div>
                     </div>
 
                 </div>
