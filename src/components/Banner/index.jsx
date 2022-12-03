@@ -1,7 +1,118 @@
+import Carousel from 'better-react-carousel'
+import styles from './styles.module.scss'
+import tenis from "./tenis1.png"
+import ornament from "./Ornament.png"
+import Botao from '../Botao'
+import { useEffect, useState } from 'react'
+
+
 
 const Banner = () => {
+  const [widthButton, setWidthButton] = useState('200px')
+
+  useEffect(() => {
+    checkSize()
+  })
+
+
+  window.addEventListener("resize", () => {
+    checkSize()
+  })
+
+  const checkSize= () => {
+    if (window.innerWidth < 500) {
+      setWidthButton('80vw');
+    } else {
+      setWidthButton('200px');
+    }
+  }
+
+
+
+
+
+  const MyDot = ({ isActive }) => (
+    <span
+      style={{
+        display: 'inline-block',
+        height: '12px',
+        width: '12px',
+        background: isActive ? "#C92071" : "#CCCCCC",
+        borderRadius: "50%",
+        position: 'relative',
+        top: '-53px',
+      }}
+    ></span>
+  )
+
+
   return (
-    <div>Davi/ Andre</div>
+
+    <div className={styles.bannerContainer}>
+      <Carousel cols={1}
+        rows={1}
+        gap={10}
+        showDots={true}
+        dot={MyDot}
+        loop={true}
+        containerStyle={{ height: "681px" }}
+        hideArrow={true}
+        responsiveLayout={[
+          { breakpoint: 462, cols: 1, rows: 1, gap: 2 }
+        ]}
+        mobileBreakpoint={462}
+
+      >
+        <Carousel.Item >
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <div className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</div>
+              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={widthButton} style={{ width: '90vw !important' }} />
+            </div>
+            <div className={styles.divImageCarouselItem}>
+              <img src={tenis} className={styles.tenis} />
+            </div>
+            <div className={styles.divOrnamentCarousel}>
+              <img src={ornament} />
+            </div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item >
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
+            </div>
+            <div className={styles.divImageCarouselItem}>
+              <img src={tenis} className={styles.tenis} />
+            </div>
+            <div className={styles.divOrnamentCarousel}>
+              <img src={ornament} />
+            </div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item >
+          <div className={styles.divItemCarousel}>
+            <div className={styles.divTextoCarouselItem}>
+              <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
+              <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
+              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
+            </div>
+            <div className={styles.divImageCarouselItem}>
+              <img src={tenis} className={styles.tenis} />
+            </div>
+            <div className={styles.divOrnamentCarousel}>
+              <img src={ornament} />
+            </div>
+          </div>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   )
 }
 
