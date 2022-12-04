@@ -1,11 +1,52 @@
 .containerCadastro {
-    background-color: blue;
-    height:200px;
-    h1{
-        color:white;
+    height: 411px;
+    width: 315px;
+    left: 30px;
+    top: 171px;
+    border-radius: 4px;
+    padding: 30px;
+
+
+    h1 {
+        height: 34px;
+        width: 255px;
+        left: 0px;
+        top: 0px;
     }
-    img{
-        height:30px;
+
+    .conviteAoCadastro {
+        height: 24px;
+        width: 255px;
+        left: 0px;
+        top: 0px;
     }
+
+    .emailComAsterisco {
+        width: 53px;
+        height: 24px;
+        top: 118px;
+        left: 30px;
+        font-weight: 700;
+        size: 12px;
+    }
+
+    input {
+        height: 60px;
+        width: 255px;
+        left: 30px;
+        top: 147px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #F8F8F8;
+    }
+
+    button {
+        border-radius: 8px;
+    }
+
+
 
 }
