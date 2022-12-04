@@ -1,11 +1,61 @@
 .containerCadastro {
-    background-color: blue;
-    height:200px;
-    h1{
-        color:white;
+    background-color: white;
+    width: 583px;
+    height: 560px;
+    top: 200px;
+    left: 100px;
+    border-radius: 4px;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+        color: black;
+        width: 523px;
+        height: 36px;
+        top: 30px;
+        left: 30px;
+        font-weight: 700;
+        size: 32px;
+        line-height: 36px;
     }
-    img{
-        height:30px;
+
+    .conviteAoCadastro {
+        width: 306px;
+        height: 28px;
+    }
+
+    .textoDoLogin {
+        width: 108.7;
+        height: 24px;
+        top: 144px;
+        left: 30px;
+    }
+
+    .retanguloDoLogin {
+        width: 523px;
+        height: 60px;
+        top: 173px;
+        left: 30px;
+        border-radius: 8px;
+        opacity: 4%;
+        color: #474747;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 404.04px;
+        height: 28px;
+        top: 189px;
+        left: 54.61px;
+        opacity: 60%;
+    }
+
+    img {
+        height: 30px;
     }
 
 }
