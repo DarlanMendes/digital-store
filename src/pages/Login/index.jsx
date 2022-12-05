@@ -1,7 +1,9 @@
+import LoginContainer from '../../components/LoginContainer'
 export default function Login(){
     return(
         <div>
-            Login
+          Login
+          <LoginContainer/>
         </div>
     )
 }
