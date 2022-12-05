@@ -15,16 +15,14 @@ export default function CardDestaques(props) {
 					backgroundPosition: "right bottom",
 				}}
 			>
-				<div className={styles.leftSide}>
-					<DestaqueDesconto texto={"30% OFF"} />
-					<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
-					<Botao
-						texto={"Compra"}
-						corFundo={"#f5f5f5"}
-						cor={"#c92071"}
-						largura={"114px"}
-					/>
-				</div>
+				<DestaqueDesconto texto={"30% OFF"} />
+				<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
+				<Botao
+					texto={"Compra"}
+					corFundo={"#f5f5f5"}
+					cor={"#c92071"}
+					largura={"114px"}
+				/>
 			</div>
 		</div>
 	);

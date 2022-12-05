@@ -3,7 +3,10 @@
 }
 
 .CardContainer {
-	// display: flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
 	background: #d8e3f2;
 	width: 405px;
 	height: 251px;
@@ -14,6 +17,7 @@
 .cardTitle {
 	width: 172px;
 	height: 72px;
+	margin: 10px 0 20px 0;
 	font-family: "Inter", sans-serif;
 	font-style: normal;
 	font-weight: 700;
@@ -21,9 +25,4 @@
 	line-height: 36px;
 	letter-spacing: 1px;
 	color: #1f1f1f;
-}
-
-.leftSide {
-	position: relative;
-	top: -20px;
 }
