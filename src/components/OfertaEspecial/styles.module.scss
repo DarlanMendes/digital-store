@@ -1,0 +1,68 @@
+// *{
+//     margin:0px;
+//     padding:0px;
+// }
+.ofertaEspecialContainer{
+    height:553px;
+    width:100vw;
+   display: flex;
+   justify-content: center;
+    .imagemContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //max-width: 573px;
+        width: 39.54vw;
+        height:466px;
+        padding-left: 0 4.28vw 0 3.58vw ;
+        .elipse{
+            position: absolute;
+        }
+        .tenis{
+           position: absolute;
+        }
+    }
+    .textoContainer{
+        width:589px;
+        display: flex;
+        flex-direction: column;
+    
+        span{
+            margin:0px;
+            padding:0px;
+            color: #C92071;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-top: 106px;
+        }
+        h2{
+            color: #474747;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 50px;
+            height:100px;
+            width: 514px;
+            white-space: wrap;
+            margin-top: 17px;
+            margin-bottom: 0;
+        }
+        p{
+          width:589px;  
+          font-weight: 400;
+          font-size:16px;
+          line-height: 28px;
+          color: #474747;
+          margin-top: 20px;
+        }
+
+    }
+
+}
+@media (max-width:900px){
+    .ofertaEspecialContainer{
+        height:701px;
+        display:flex;
+        flex-direction:column;
+    }
+}
