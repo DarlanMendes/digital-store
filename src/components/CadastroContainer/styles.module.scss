@@ -7,11 +7,17 @@
     padding: 30px;
 }
 
-h1 {
-    height: 34px;
+.criarConta {
+    font-weight: 700;
     width: 255px;
-    left: 0px;
-    top: 0px;
+    height: 34px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: -10px;
+    margin-left: -5px;
 }
 
 .conviteAoCadastramento1 {
@@ -32,6 +38,10 @@ h1 {
     letter-spacing: 0.75px;
 }
 
+.campoDeDigitacaoDoEmail {
+    margin-bottom: 30px;
+}
+
 input {
     height: 60px;
     width: 255px;
@@ -47,4 +57,34 @@ input {
 
 button {
     border-radius: 8px;
+}
+
+.conviteAoCadastramento2 {
+    height: 22px;
+    width: 125px;
+    left: 0px;
+    top: 0px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.iconeGmail {
+    height: 23.85px;
+    width: 24px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin-left: 75px;
+    margin-right: 25px;
+}
+
+.iconeFacebook {
+    height: 23.85px;
+    width: 24px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
 }
