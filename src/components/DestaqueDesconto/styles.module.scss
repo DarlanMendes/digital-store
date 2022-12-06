@@ -1,14 +1,15 @@
-.descontoContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height:32px;
-    width: 96px;
-    font-weight: 700;
-    background-color:#E7FF86;
-    color:#474747;
-    border-radius: 29px;
-    padding: 5px 15px;
-    z-index: 3;
+.descontoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 32px;
+	width: 96px;
+	font-weight: 700;
+	background-color: #e7ff86;
+	color: #474747;
+	border-radius: 29px;
+	padding: 5px 15px;
+	z-index: 3;
+	white-space: nowrap;
 }
