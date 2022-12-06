@@ -20,12 +20,22 @@
             }
 
             .subtitulos {
+                text-align: center;
                 width: 346.3px;
                 display: flex;
                 justify-content: space-between;
                 font-weight: 500;
                 font-size: 14px;
                 color: #474747;
+                .subQuantidade{
+                    width: 112.29px;
+                }
+                .subUnitario{
+                    width: 86px;
+                }
+                .subTotal{
+                    width: 86px;
+                }
             }
         }
 
@@ -92,16 +102,29 @@
 
             .informacaoPedidos {
                 display: flex;
+                width: 345px;
                 justify-content: space-between;
-                max-width: 254.17px;
+
                 .quantidade {
-                    .botoes{
-                        max-width: 106.46px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .botoes {
+                        width: 106.46px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        button{
-                            font: 700;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                            font-weight: 800;
+                            color: #474747;
+                        }
+
+                        button {
+                            font-weight: 700;
                             color: #474747;
                             width: 35px;
                             height: 35px;
@@ -109,21 +132,61 @@
                             background-color: #FFFFFF;
                             border-radius: 2.91667px;
                         }
-                        button:hover{
+
+                        button:hover {
                             background-color: #CCCCCC;
                         }
-                        p{
-                            font-size: 12px;
-                            line-height: 18px;
-                            font: 700;
-                            color: #474747;
-                        }
+                    }
+
+                    .removerItem {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #474747;
+                        text-decoration-line: underline;
                     }
                 }
 
-                .unidades {}
+                .unidades {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-                .total {}
+                    .normalPrice {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #CCCCCC;
+                        text-decoration: line-through;
+                        margin-bottom: 6px;
+                    }
+
+                    .discountPrice {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #474747;
+                        font-weight: 700;
+                    }
+                }
+                
+                .total {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .normalPrice {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #CCCCCC;
+                        text-decoration: line-through;
+                        margin-bottom: 6px;
+                    }
+    
+                    .discountPrice {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #474747;
+                        font-weight: 700;
+                    }
+                }
 
             }
         }

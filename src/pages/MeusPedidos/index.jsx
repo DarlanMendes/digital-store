@@ -10,13 +10,13 @@ export default function MeusPedidos() {
                         MEU CARRINHO
                     </div>
                     <div className={estilo.subtitulos}>
-                        <div>
+                        <div className={estilo.subQuantidade}>
                             QUANTIDADE
                         </div>
-                        <div>
+                        <div className={estilo.subUnitário}>
                             UNITÁRIO
                         </div>
-                        <div>
+                        <div className={estilo.subTotal}>
                             TOTAL
                         </div>
 
@@ -47,10 +47,24 @@ export default function MeusPedidos() {
                                 <p>1</p>
                                 <button> + </button>
                             </div>
-                            <a>Remover item</a>
+                            <p className={estilo.removerItem}>Remover item</p>
                         </div>
-                        <div className={estilo.unidades}>unitário</div>
-                        <div className={estilo.total}>Total</div>
+                        <div className={estilo.unidades}>
+                            <div className={estilo.normalPrice}>
+                                R$ 219,00
+                            </div>
+                            <div className={estilo.discountPrice}>
+                                R$ 219,00
+                            </div>
+                        </div>
+                        <div className={estilo.total}>
+                            <div className={estilo.normalPrice}>
+                                R$ 219,00
+                            </div>
+                            <div className={estilo.discountPrice}>
+                                R$ 219,00
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
