@@ -1,6 +1,7 @@
 # Projeto do Ecommerce - DigitalStore
 
 
+
 ## Missão
 
 Trabalho do Curso de FULLSTACK na Escola de Habilidades DIGITAL COLLEGE
@@ -12,9 +13,9 @@ Trabalho do Curso de FULLSTACK na Escola de Habilidades DIGITAL COLLEGE
 - Andre
 - Davi
 - Emanuel
-- Ermesson
-- Antonio
-- Antonio 2
+- Emerson
+- J. Antonio
+- Antonio Rodrigues
 - Jorge
 
 OBS: Todos em Busca de Oportunidades no mercado de trabalho.
@@ -105,6 +106,10 @@ Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/d
 
 # Getting Started with Create React App
 
+
+
+# Getting Started with Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -173,3 +178,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Andamento
+
+[]Header
+[]Footer
+[X]Home
+
