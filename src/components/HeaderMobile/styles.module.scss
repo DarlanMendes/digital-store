@@ -1,0 +1,75 @@
+.imgContainer {
+        height: 60px;
+        width: 375px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .imagemLogo {
+                width: 4.8vw;
+                margin-left: 118px;
+        }
+
+        .tituloLogo {
+                height: 60px;
+                margin-left: 1.0186vw;
+                font-size: 19.85px;
+                font-weight: 600;
+                line-height: 44px;
+                color: #C92071;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+
+        }
+
+        .carrinho {
+                font-size: 18.5px;
+                color: #c92071;
+                margin-left: -10px;
+                margin-top: -10px;
+        }
+
+        .qtdComprasAdicionadas {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 13px;
+                width: 13px;
+                background-color: #c92071;
+                border-radius: 100%;
+                position: relative;
+                top: 5px;
+                padding: 2px;
+
+                span {
+                        color: white;
+                        font-size: 12px;
+                        font-weight: 700;
+                }
+        }
+
+        .Carrinho {
+                margin-left: 18.45px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: -7px;
+        }
+}
+
+
+
+.icon {
+        position: relative;
+        color: rgb(102, 102, 102);
+}
+
+
+.posicaoIconSearch {
+        margin-left: 34.95px;
+        width: 19.98px;
+        height: 19.98px;
+}
