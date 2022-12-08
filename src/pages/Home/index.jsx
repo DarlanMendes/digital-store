@@ -7,7 +7,7 @@ import CardDestaques from "../../components/CardDestaques/index.jsx";
 
 export default function Home() {
 	let mockup = mock;
-	console.log(mockup);
+	
 
 	return (
 		<div className={styles.homeContainer}>
