@@ -15,6 +15,6 @@ export default function CadastroContainer() {
             <p className={styles.conviteAoCadastramento2}>Ou faça login com</p>
             <img src={gmailLogo} className={styles.iconeGmail} alt="logo gmail" />
             <img src={faceLogo} className={styles.iconeFacebook} alt="logo facebook" />
-        </div> 
+        </div>
     </div>)
 }                                                                               
