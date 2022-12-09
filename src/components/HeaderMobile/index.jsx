@@ -5,12 +5,14 @@ import { IconContext } from "react-icons";
 import NavLink from "../NavLink";
 import Botao from "../Botao";
 import Carrinho from "../Carrinho"
+import { FaBars } from "react-icons/fa";
 
 
 
 export default function HeaderMobile() {
 
         return (<div>
+                <FaBars />
                 <div className={styles.imgContainer}>
                         <img src={logo} alt="Logo Digital College" className={styles.imagemLogo} />
 
