@@ -46,17 +46,19 @@ const Banner = () => {
   )
 
 
+
+
   return (
 
     <div className={styles.bannerContainer}>
       <Carousel cols={1}
         rows={1}
-        gap={10}
+        gap={5}
         showDots={true}
         dot={MyDot}
         loop={true}
         containerStyle={{ height: "681px",width:"100vw", boxSiging:"none"}}
-        hideArrow={true}
+        hideArrow={false}
         responsiveLayout={[
           { breakpoint: 462, cols: 1, rows: 1, gap: 2 }
         ]}

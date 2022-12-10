@@ -11,6 +11,7 @@
     justify-content: center;
 }
 
+
 .divTextoCarouselItem {
     height: calc(681px - 124px);
     width: calc(90vw - 1000px);
@@ -54,9 +55,11 @@
     line-height: 34px;
 }
 
+
 .divImageCarouselItem {
     width: 935.61px;
     height: 650px;
+
 }
 
 .divOrnamentCarousel {
@@ -67,6 +70,25 @@
     position: absolute;
     top: 78px;
     right: 37px;
+}
+
+
+@media(max-width: 1500px){
+
+    .tenis {
+        width: 893px;
+        height: 581px;
+        margin-left: 200px;
+    }
+    
+    
+    .divImageCarouselItem {
+        width: 935.61px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media(max-width: 500px) {
