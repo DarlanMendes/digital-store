@@ -1,0 +1,58 @@
+.container{
+    width: 375px;
+    .primeiraLinha {
+        width: 1240px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .primeiraLinhaII {
+        width: 1240px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .segundaLinha {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        width: 892px;
+    
+        .titulo {
+            font-weight: 700;
+            font-size: 24px;
+            color: #474747;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            height: 38px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #C92071;
+        }
+    }
+    .terceiraLinha{
+        display: flex;
+    }
+    }
+
+    @media (max-width: 900px){
+        .container{
+            display: flex;
+            width: 375px;
+            margin: 50px 30px 0 30px;
+            .primeiraLinha {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .segundaLinha {
+                display: none;
+
+            }
+            .terceiraLinha{
+                display: none;
+            }
+            }
+    }  
