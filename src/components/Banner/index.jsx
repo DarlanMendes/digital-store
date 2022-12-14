@@ -29,8 +29,6 @@ const Banner = () => {
 
 
 
-
-
   const MyDot = ({ isActive }) => (
     <span
       style={{
@@ -45,22 +43,6 @@ const Banner = () => {
     ></span>
   )
     
-
-  const dotResponsive = ({ isActive }) => (
-    <span
-      style={{
-        height: '12px',
-        width: '12px',
-        background: isActive ? "#C92071" : "#CCCCCC",
-        borderRadius: "50%",
-        position: 'relative',
-        top: '-53px',
-      }}
-    ></span>
-  )
-
-
-
   return (
 
     <div className={styles.bannerContainer}>
