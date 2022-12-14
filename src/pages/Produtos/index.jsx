@@ -5,6 +5,9 @@ import ProdutoCard from '../../components/ProdutoCard'
 export default function ProdutoHome() {
     return (
         <div className={estilo.container}>
+            <div>
+            Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino
+            </div>
             <div className={estilo.produto}>
                 <div>
                     <SliderProduto />
@@ -26,7 +29,6 @@ export default function ProdutoHome() {
                     <ProdutoCard />
                     <ProdutoCard />
                 </div>
-
             </div>
         </div>
 

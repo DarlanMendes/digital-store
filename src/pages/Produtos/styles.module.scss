@@ -1,7 +1,9 @@
 .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F9F8FE;
     .produto {
         display: flex;
         margin-bottom: 80px;
@@ -34,6 +36,7 @@
             width: 1240px;
             display: flex;
             justify-content: space-between;
+            margin-bottom: 127px;
         }
     }
 }
