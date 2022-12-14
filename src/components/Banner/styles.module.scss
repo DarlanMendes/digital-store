@@ -73,15 +73,15 @@
 }
 
 
-@media(max-width: 1500px){
+@media(max-width: 1500px) {
 
     .tenis {
         width: 893px;
         height: 581px;
         margin-left: 200px;
     }
-    
-    
+
+
     .divImageCarouselItem {
         width: 935.61px;
         height: 650px;
@@ -93,60 +93,95 @@
 
 @media(max-width: 500px) {
 
-    .divItemCarousel {
+    .bannerContainer {
         height: 662px;
+        width: 100vw;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+    }
+
+    .divItemCarousel {
+        height: 660px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+
     }
 
     .tenis {
-        margin-top: 35px;
-        width: 347px;
-        height: 280px;
-        margin-left: -40px
+        width: 397px;
+        height: 278px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+        margin-bottom: -10px;
+        margin-top: -30px;
+    }
+
+    .divOrnamentCarousel {
+        width: 140px;
+        height: 140px;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        left: 330px;
+        top: 20px;
+      
     }
 
     .informativoTexto {
-        width: 248px;
+        width: 268px;
         height: 22px;
-        white-space: nowrap;
-        margin-bottom: 10px;
-        display: flex;
-        text-align: center;
-        
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+        margin-bottom: 5px;
+        color: #C92071;
+        margin-top: -50px;
     }
 
-    .mainTextoCarousel{
+
+    .mainTextoCarousel {
         font-size: 40px;
         width: 297px;
         height: 100px;
         line-height: 50px;
-        margin-bottom: 20px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+        margin-bottom: 10px;
     }
 
     .divTextoCarouselItem {
-        display: flex;
-        justify-content: center;
-        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        align-items: center;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
     }
 
     .descricaoTextoCarousel {
         width: 325px;
         height: 66px;
-        margin-bottom: 40px;
         font-size: 14px;
         font-weight: 500;
-        display: flex;
-        text-align: center;
         line-height: 22px;
-        
-    }
-    .divImageCarouselItem{
-        width: 70vw;
-        margin-bottom: 90px;
-        height: 662px;
-
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+        margin-bottom: 30px;
     }
 
-  
- 
-
+    .divImageCarouselItem {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px;
+        position: relative;
+    }
 }
