@@ -1,36 +1,36 @@
 import estilo from './styles.module.scss'
-import SliderProduto from '../../components/SliderProdutosSelec'
-import DescricaoProduto from '../../components/DescriçãoProdutoSelecionado'
-import ProdutoCard from '../../components/ProdutoCard'
+import Filtrar from '../../components/MenuFiltrar'
+import Produtos from '../../components/ProdutoCard'
+import Ordenar from '../../components/MenuOrdenar'
 export default function ProdutoHome() {
     return (
         <div className={estilo.container}>
-            <div>
-            Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino
+            <div className={estilo.Ordenar}>
+                <Ordenar/>
             </div>
-            <div className={estilo.produto}>
-                <div>
-                    <SliderProduto />
+            <div className={estilo.containerProdutos}>
+                <div className={estilo.menuFiltrar}>
+                    <Filtrar />
                 </div>
-                <div >
-                    <DescricaoProduto />
+                <div className={estilo.produtos}>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
+                    <Produtos/>
                 </div>
-            </div>
-            <div className={estilo.relacionados}>
-                    <div className={estilo.containerTitulo}>
-                        <div className={estilo.Titulo}>
-                            Produtos Relacionados
-                        </div>
-                        <a href="">Ver todos -{">"}</a>
-                    </div>
-                <div className={estilo.produtosRelacionados}>
-                    <ProdutoCard />
-                    <ProdutoCard />
-                    <ProdutoCard />
-                    <ProdutoCard />
-                </div>
+
             </div>
         </div>
-
     )
 }

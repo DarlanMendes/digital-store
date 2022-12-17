@@ -1,72 +1,51 @@
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F9F8FE;
-    .produto {
+.container{
+    width: 1240px;
+    .resultado{
         display: flex;
-        margin-bottom: 80px;
     }
+    .containerProdutos{
+        display: flex;
+        .menuFiltrar{
+            margin-right: 28px;
 
-    .relacionados {
-        .containerTitulo {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1240px;
-            .Titulo {
-                height: 38px;
-                font-weight: 700;
-                font-size: 24px;
-                color: #474747;
-            }
-
-            a {
-                text-decoration: none;
-                height: 38px;
-                font-weight: 400;
-                font-size: 18px;
-                color: #C92071;
-            }
         }
-
-        .produtosRelacionados {
-            width: 1240px;
+        .produtos{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 127px;
+            flex-wrap: wrap;
+            width: 960px;
+
         }
     }
 }
 
-@media (max-width: 900px) {
-    .container {
-        display: flex;
-        align-items: center;
 
-        .produto {
+@media (max-width:900px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .resultado{
             display: flex;
             flex-direction: column;
-            margin-bottom: 80px;
+            
         }
-
-        .relacionados {
-            .containerTitulo {
-                .Titulo {
-                    font-size: 16px;
-                }
-
-                a {
-                    font-size: 14px;
-                }
+        .containerProdutos{
+            display: flex;
+            flex-direction: column;
+            .menuFiltrar{
+                display: none;
             }
-
-            .produtosRelacionados {
-                width: 335px;
+            .produtos{
+                display: flex;
+                justify-content: space-between;
                 flex-wrap: wrap;
+                width: 335px;
+    
             }
         }
     }
+    
 }

@@ -31,3 +31,17 @@
         }
     }
 }
+
+@media (max-width:900px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        .conteudo{
+            .tituloResultado{
+                display: none;
+            }
+
+        }
+
+    }
+}
