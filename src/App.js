@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
+import ProdutoSelecionado from './components/ProdutoSelecionado'
 function App() {
 
 
@@ -20,8 +21,10 @@ function App() {
 
       <Header />
       <Routes>
-        <Route path="/produtos/:id" element={<Produtos />} />
-        <Route path="/produtos/" element={<Produtos />} />
+        <Route path="/produtos" >
+          <Route index element={<Produtos/>}/>
+          <Route path=":id" element={<ProdutoSelecionado/>}/>
+        </Route>
         <Route path="/home" element={<Home />} />
         <Route path="/meuspedidos" element={<MeusPedidos />} />
         {/* categorias */}
