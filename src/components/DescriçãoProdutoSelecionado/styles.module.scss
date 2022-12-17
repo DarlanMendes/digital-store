@@ -1,0 +1,224 @@
+.container {
+    width: 441px;
+
+    .nomeProduto {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 1px;
+        color: #1F1F1F;
+        margin-bottom: 10px;
+    }
+
+    .referencias {
+        font-weight: 500;
+        font-size: 12px;
+        color: #666666;
+        line-height: 18px;
+        margin-bottom: 10px;
+
+        span {
+            margin: 0 5px 0 0;
+        }
+    }
+
+    .avaliacoes {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .estrelas {
+            color: #F6AA1C;
+
+            svg {
+                margin-right: 4.85px;
+            }
+        }
+
+        .mediaAvaliacao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 63px;
+            height: 23px;
+            background-color: #F6AA1C;
+            border-radius: 4px;
+            color: white;
+            margin: 0 14px;
+
+            span {
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 24px;
+                margin-right: 3.55px;
+            }
+        }
+
+        .totalAvaliacoes {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8F8F8F;
+            line-height: 22px;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    .preco {
+        margin-bottom: 20px;
+
+        label {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.75px;
+            color: #474747;
+        }
+
+        .precoFinal {
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: 1px;
+        }
+
+        label.precoFinal {
+            font-weight: 700;
+            font-size: 16px;
+            color: #1F1F1F;
+        }
+
+        .precoDesconto {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.75px;
+            text-decoration-line: line-through;
+            color: #CCCCCC;
+            margin-left: 10px;
+        }
+    }
+
+    .descricaoProduto {
+        label {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.75px;
+            color: #8F8F8F;
+            margin-bottom: 5px;
+        }
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        margin-bottom: 30px;
+    }
+
+    .tamanhoProduto {
+        label {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8F8F8F;
+        }
+
+        .botoesTamanho {
+            display: flex;
+            justify-content: space-between;
+            width: 280px;
+            margin-top: 10px;
+
+            button {
+                width: 48px;
+                height: 48px;
+                border: 1px solid #CCCCCC;
+                border-radius: 4px;
+                color: #474747;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                background-color: white;
+            }
+
+            button:hover {
+                background-color: #C92071;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .cores {
+        margin-top: 10px;
+
+        label {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8F8F8F;
+        }
+
+        .botoesCores {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 27px;
+            width: 186px;
+
+            button {
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+                border: 2px solid #FFFFFF;
+            }
+
+            .cor {
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+            }
+        }
+
+    }
+    .botaoMedia {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 335px;
+
+        .nomeProduto {
+            font-size: 24px;
+        }
+
+        .referencias {
+            font-size: 12px;
+
+            span {
+                margin: 0 5px 0 0;
+            }
+        }
+
+        .avaliacoes {
+            .estrelas {
+                svg {
+                    margin-right: 4px;
+                }
+            }
+
+            .mediaAvaliacao {
+                margin: 0 10px;
+            }
+        }
+        .botaoMedia {
+            display: block;
+        }
+    
+        .botaoNormal {
+            display: none;
+        }
+    }
+    
+
+}
