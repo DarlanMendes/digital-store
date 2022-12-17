@@ -1,11 +1,24 @@
 .containerCadastro {
-    height: 411px;
-    width: 315px;
-    left: 30px;
-    top: 171px;
+    height: 399px;
+    width: 583px;
     border-radius: 4px;
     padding: 30px;
-    background-color: white;
+    background-color: gray;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 446px;
+}
+
+.subcontainerPrincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcontainerSecundario {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
 }
 
 .criarConta {
@@ -13,12 +26,16 @@
     width: 255px;
     height: 34px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 34px;
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: -10px;
-    margin-left: -5px;
+}
+
+::-webkit-input-placeholder {
+    padding: 16px 24.61px;
+    
 }
 
 .conviteAoCadastramento1 {
@@ -41,6 +58,7 @@
 
 .campoDeDigitacaoDoEmail {
     margin-bottom: 30px;
+    width: 523px;
 }
 
 input {
@@ -56,20 +74,15 @@ input {
     background-color: #F8F8F8;
 }
 
-button {
-    border-radius: 8px;
-}
+
 
 .conviteAoCadastramento2 {
     height: 22px;
     width: 125px;
-    left: 0px;
-    top: 0px;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.25px;
     font-weight: 500;
-    margin-left: 50px;
 }
 
 .iconeGmail {
