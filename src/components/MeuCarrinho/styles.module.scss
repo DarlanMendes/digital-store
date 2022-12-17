@@ -1,0 +1,546 @@
+.containerGeralMobile {
+    display: none;
+}
+
+.container {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 890px;
+    height: 352px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+
+    .carrinho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 860px;
+        height: 322px;
+
+        .nomes {
+            display: flex;
+            max-width: 860px;
+            justify-content: space-between;
+
+            .titulo {
+                font-weight: 700;
+                font-size: 14px;
+                color: #474747;
+            }
+
+            .subtitulos {
+                text-align: center;
+                width: 346.3px;
+                display: flex;
+                justify-content: space-between;
+                font-weight: 500;
+                font-size: 14px;
+                color: #474747;
+
+                .subQuantidade {
+                    width: 112.29px;
+                }
+
+                .subUnitario {
+                    width: 86px;
+                }
+
+                .subTotal {
+                    width: 86px;
+                }
+            }
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .fileirasProdutos {
+            display: flex;
+            justify-content: space-between;
+
+            .idProduto {
+                display: flex;
+
+                .imagemProduto {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #E2E3FF;
+                    border-radius: 4.78608px;
+                    box-shadow: 0px 4.78608px 29.913px rgba(0, 0, 0, 0.05);
+                    width: 127.63px;
+                    height: 104px;
+                    margin-right: 20px;
+                }
+
+                .especificacoesProduto {
+                    max-height: 101px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .nomeProduto {
+                        max-width: 219px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    .corProduto {
+                        font-weight: 500;
+                        font-size: 14px;
+
+                        label {
+                            color: #8F8F8F;
+                        }
+
+                        color:#1F1F1F;
+                    }
+
+                    .especProduto {
+                        font-weight: 500;
+                        font-size: 14px;
+
+                        label {
+                            color: #8F8F8F;
+                        }
+
+                        color:#1F1F1F;
+
+                    }
+                }
+            }
+
+            .informacaoPedidos {
+                display: flex;
+                width: 345px;
+                justify-content: space-between;
+
+                .quantidade {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .botoes {
+                        width: 106.46px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                            font-weight: 800;
+                            color: #474747;
+                        }
+
+                        button {
+                            font-weight: 700;
+                            color: #474747;
+                            width: 35px;
+                            height: 35px;
+                            border: 0.73px solid #CCCCCC;
+                            background-color: #FFFFFF;
+                            border-radius: 2.91667px;
+                        }
+
+                        button:hover {
+                            background-color: #CCCCCC;
+                        }
+                    }
+
+                    .removerItem {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #474747;
+                        text-decoration-line: underline;
+                    }
+                }
+
+                .unidades {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .normalPrice {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #CCCCCC;
+                        text-decoration: line-through;
+                        margin-bottom: 6px;
+                    }
+
+                    .discountPrice {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #474747;
+                        font-weight: 700;
+                    }
+                }
+
+                .total {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .normalPrice {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #CCCCCC;
+                        text-decoration: line-through;
+                        margin-bottom: 6px;
+                        margin-right: 5px;
+                    }
+
+                    .discountPrice {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #474747;
+                        font-weight: 700;
+                        margin-right: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .informacoesAdicionais {
+        display: flex;
+        justify-content: space-between;
+
+        .desconto {
+            label {
+                font-weight: 700;
+                font-size: 12px;
+                color: #474747;
+            }
+
+            input {
+                margin-top: 5px;
+                width: 270px;
+                height: 60px;
+                border: none;
+                background-color: #f8f8f8;
+                border-radius: 8px;
+            }
+
+            input::placeholder {
+                font-weight: 300;
+                color: #666666;
+                padding: 12px;
+                line-height: 28px;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .containerDescontoMobile {
+            display: none;
+        }
+
+        .frete {
+            label {
+                font-weight: 700;
+                font-size: 12px;
+                color: #474747;
+            }
+
+            input {
+                margin-top: 5px;
+                width: 270px;
+                height: 60px;
+                border: none;
+                background-color: #f8f8f8;
+                border-radius: 8px;
+            }
+
+            input::placeholder {
+                font-weight: 300;
+                color: #666666;
+                padding: 12px;
+                line-height: 28px;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .containerFreteMobile {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: none;
+    }
+
+    .containerGeralMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 907px;
+        width: 315px;
+        margin-bottom: 10px;
+
+        .containerMobile {
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 315px;
+            height: 459px;
+            background-color: #FFFFFF;
+            border-radius: 4px;
+
+            .carrinhoMobile {
+                width: 255px;
+                height: 399px;
+
+                .titulo {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+
+                hr {
+                    margin: 20px 0;
+                }
+
+                .idProduto {
+                    display: flex;
+
+                    .imagemProduto {
+                        img {
+                            width: 50.63px;
+                            height: 25.19px;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #E2E3FF;
+                        border-radius: 4.78608px;
+                        box-shadow: 0px 4.78608px 29.913px rgba(0, 0, 0, 0.05);
+                        width: 71.18px;
+                        height: 58px;
+                        margin-right: 20px;
+                    }
+
+                    .especificacoesProduto {
+                        .nomeProduto {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.75px;
+                            color: #1F1F1F;
+                            margin: 0 0 11px 0;
+                        }
+
+                        .corProduto {
+                            font-weight: 500;
+                            font-size: 12px;
+                            margin: 0 0 4px 0;
+
+                            label {
+                                color: #8F8F8F;
+                            }
+
+                            color:#1F1F1F;
+                        }
+
+                        .especProduto {
+                            font-weight: 500;
+                            font-size: 12px;
+
+                            label {
+                                color: #8F8F8F;
+                            }
+
+                            color:#1F1F1F;
+                        }
+                    }
+                }
+
+                .subQuantidade {
+                    margin: 20px 0 10px 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #474747;
+                }
+
+                .quantidade {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .botoes {
+                        width: 255px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                            font-weight: 800;
+                            color: #474747;
+                        }
+
+                        button {
+                            font-weight: 700;
+                            color: #474747;
+                            width: 80px;
+                            height: 35px;
+                            border: 0.73px solid #CCCCCC;
+                            background-color: #FFFFFF;
+                            border-radius: 2.91667px;
+                        }
+
+                        button:hover {
+                            background-color: #CCCCCC;
+                        }
+                    }
+
+                    .removerItem {
+                        display: flex;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #474747;
+                        text-decoration-line: underline;
+                        margin-top: 12px;
+                    }
+
+                }
+
+                .informacaoPedidos {
+                    margin-top: 25px;
+
+                    .unidades {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .subUnitario {
+                            width: 82px;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+
+                        .normalPrice {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #CCCCCC;
+                            text-decoration: line-through;
+                        }
+
+                        .discountPrice {
+                            font-size: 16px;
+                            color: #474747;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .total {
+                        margin-top: 23px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .subTotal {
+                            width: 82px;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+
+                        .normalPrice {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #CCCCCC;
+                            text-decoration: line-through;
+                        }
+
+                        .discountPrice {
+                            font-size: 16px;
+                            color: #474747;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .containerDescontoMobile {
+            width: 315px;
+            height: 210px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+
+            .descontoMobile {
+                width: 255px;
+                height: 159px;
+
+                label {
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #474747;
+                }
+
+                input {
+                    margin: 10px 0;
+                    width: 255px;
+                    height: 60px;
+                    border: none;
+                    background-color: #f8f8f8;
+                    border-radius: 8px;
+                }
+
+                input::placeholder {
+                    font-weight: 300;
+                    color: #666666;
+                    padding: 12px;
+                    line-height: 28px;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+
+        .containerFreteMobile {
+            width: 315px;
+            height: 210px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+
+            .freteMobile {
+                width: 255px;
+                height: 159px;
+
+                label {
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #474747;
+                }
+
+                input {
+                    margin: 10px 0;
+                    width: 255px;
+                    height: 60px;
+                    border: none;
+                    background-color: #f8f8f8;
+                    border-radius: 8px;
+                }
+
+                input::placeholder {
+                    font-weight: 300;
+                    color: #666666;
+                    padding: 12px;
+                    line-height: 28px;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+    }
+}

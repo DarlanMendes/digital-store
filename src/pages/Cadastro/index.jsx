@@ -1,8 +1,9 @@
-import CadastroContainer from "../../components/CadastroContainer"
+import CadastroContainer from "../../components/CadastroContainer";
+import CriarConta from "../../components/CriarConta"
 export default function Cadastro(){
     return(
         <div>
-            Cadastro
+            <CriarConta/>
             <CadastroContainer/>
         </div>
     )

@@ -5,7 +5,7 @@ import {useLocation} from 'react-router-dom';
 export default function NavLink() {
 
     let location = useLocation()
-    console.log(location)
+    
     return (
         <ul className={styles.navLinkContainer}>
             {route.map((item, index) => (

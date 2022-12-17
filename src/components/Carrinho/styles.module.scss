@@ -22,3 +22,113 @@
         font-weight: 700;
     }
 }
+.carrinhoPopUp{
+    width:315.43px;
+    position: absolute;
+    right:99.57px;
+    top:77px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    display: flex;
+    gap:20px;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .titlePopUp{
+        height: 74px;
+        padding: 30px 0 0 0px;
+        display: flex;
+        flex-direction: start;
+        h2{
+            font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 700;
+            color: #474747;
+            border-bottom: 1px solid #ccc;
+            width: 255.43px;
+        }
+    }
+    .cardProd{
+        height: 93px;
+        width:255.43px;
+        display: flex;
+        flex-direction: row;
+        
+        .imgContainer{
+            width:71.18px;
+            height:58px;
+            border-radius:2.67px;
+            background-color: #E2E3FF; 
+            margin-right: 20px;
+            img{
+                margin-top: 16.35px;
+                margin-left:10.22px;
+                margin-right: 10.35px;
+            }
+        }
+        .textContainer{ 
+            width:167px;
+            h3{
+                font-size: 14px;
+                color:#1F1F1F;
+                font-weight: 700;
+                line-height: 20px;
+            }
+            .precoContainer{
+                margin-top: 7px;
+                height: 24px;
+                .precoAtual{
+                    margin-top: 2px;
+                    font-size:16px;
+                    color:#474747;
+                    width:88px;
+                }
+                .precoAnterior{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color:#ccc;
+                    text-decoration: line-through;
+                    width: 80px;
+                    margin-left: 4px;
+                    padding: 2px;
+                    height: 28px;
+                }
+            }
+            
+        }
+    }
+    .valorTotal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+        width: 255.43px;
+        border-top: 1px solid #ccc;
+       padding-top: 20px;
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+            color: #1F1F1F;
+        }
+        span{
+            color: #EE4266;
+            font-size: 16px;
+        }
+
+    }
+    .containerBotoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        width: 255.43px;
+        .botao{
+            border: none;
+            background-color: white;
+            text-decoration: underline;
+        }
+    }
+}

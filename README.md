@@ -1,3 +1,113 @@
+# Projeto do Ecommerce - DigitalStore
+
+
+
+## Missão
+
+Trabalho do Curso de FULLSTACK na Escola de Habilidades DIGITAL COLLEGE
+
+### Integrantes
+
+- Lucas
+- Darlan
+- Andre
+- Davi
+- Emanuel
+- Emerson
+- J. Antonio
+- Antonio Rodrigues
+- Jorge
+
+OBS: Todos em Busca de Oportunidades no mercado de trabalho.
+
+
+### Andamento
+
+[]Header
+[X]Footer
+[X]Home
+
+Link do Trello - https://trello.com/b/uCYQyndB/digital-store 
+Link do Figma - https://www.figma.com/file/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=474%3A635
+
+
+
+# Introdução ao Create React App
+
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
+
+### `npm start`
+
+Executa o aplicativo no modo de desenvolvimento.
+Abrir [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
+
+Ta página será recarregada quando você fizer alterações.
+Você também pode ver quaisquer erros de fiapos no console.
+
+### 'npm test'
+Inicia o executor de teste no modo de observação interativo.
+Veja a seção sobre [running tests](https://facebook.github.io/create-react-app/docs/running-tests) para mais informações.
+
+### `npm run build`
+
+Cria o aplicativo para produção na pasta 'build'.Ele agrupa corretamente o React no modo de produção e otimiza a compilação para o melhor desempenho.
+
+A compilação é minimizada e os nomes de arquivos incluem os hashes.
+Seu aplicativo está pronto para ser implantado!
+
+Veja a seção sobre
+ [deployment](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
+
+### `npm run eject`
+
+**Nota: esta é uma operação unidirecional. Uma vez que você 'ejeta', você não pode voltar!**
+
+Se você não estiver satisfeito com a ferramenta de compilação e as opções de configuração, poderá "ejetar" a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
+
+Em vez disso, ele copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc.) diretamente em seu projeto para que você tenha controle total sobre eles. Todos os comandos, exceto 'ejetar', ainda funcionarão, mas eles apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto, você está sozinho.
+
+Você não precisa usar 'ejetar'. O conjunto de recursos com curadoria é adequado para implantações pequenas e médias, e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que essa ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronto para ela.
+
+## Saiba Mais
+
+Você pode saber mais no [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+Para aprender a Reagir, confira o [React documentation](https://reactjs.org/).
+
+### Divisão de código
+
+Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analisando o tamanho do pacote
+
+Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Criando um aplicativo Web progressivo
+
+Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Configuração Avançada
+
+Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Implantação
+
+Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` falha em minimizar
+
+Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Original
+
+# Getting Started with Create React App
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +178,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Andamento
+
+[]Header
+[]Footer
+[X]Home
+
