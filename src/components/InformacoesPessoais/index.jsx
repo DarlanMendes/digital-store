@@ -15,7 +15,14 @@ export default function InformacoesPessoais() {
                 {infoPessoal&&infoPessoal.map((input,index)=>(
                     <div key={index} className={styles.infoPessoalInput}>
                         <h2>{input.titulo}</h2>
-                        <input placeholder={input.placeholder}/>
+                        
+                        <input placeholder={input.placeholder} onChange={(e)=>{
+                            setInfoPessoal(
+                               infoPessoal.map((info)=>
+                               info===input?{...info,valor:e.target.value}:{...info}
+                               )
+                            )
+                            }}/>
                     </div>
                 ))}
         </div>)
