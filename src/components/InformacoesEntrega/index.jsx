@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './styles.module.scss'
 export default function InformacoesEntrega() {
-    const [infoPessoal, setInfoPessoal] = useState(
+    const [infoEntrega, setInfoEntrega] = useState(
         [{ titulo: "Endereço *", placeholder: "Insira seu endereço", valor: '' },
         { titulo: "Bairro *", placeholder: "Insira seu bairro", valor: '' },
         { titulo: "Cidade *", placeholder: "Insira seu cidade", valor: '' },
@@ -13,10 +13,18 @@ export default function InformacoesEntrega() {
         <div className={styles.infoEntregaContainer}>
             <h1>Informações de Entrega</h1>
             <hr />
-            {infoPessoal && infoPessoal.map((input, index) => (
+            {infoEntrega && infoEntrega.map((input, index) => (
                 <div key={index} className={styles.infoEntregaInput}>
                     <h2>{input.titulo}</h2>
-                    <input placeholder={input.placeholder} />
+                     
+                    <input placeholder={input.placeholder} onChange={(e)=>{
+                            setInfoEntrega(
+                               infoEntrega.map((info)=>
+                               info===input?{...info,valor:e.target.value}:{...info}
+                               )
+                            )
+                            }}/>
+                
                 </div>
             ))}
         </div>)

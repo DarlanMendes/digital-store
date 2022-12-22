@@ -1,0 +1,209 @@
+.container {
+    width: 700.73px;
+    height: 687px;
+
+    .imgPrincipal {
+        width: 700.73px;
+        height: 571px;
+        background-color: #E2E3FF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16.73px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+
+        button {
+            all: unset;
+            height: 100%;
+        }
+
+        button.mediaLeft {
+            display: none;
+        }
+
+        button.mediaRight {
+            display: none;
+        }
+
+        button:hover {
+            background-color: #E2E3FF;
+            opacity: 70%;
+
+        }
+
+        img {
+            width: 498.42px;
+            height: 248px;
+        }
+    }
+
+    .imgSecundarias {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .img1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 117.81px;
+            height: 96px;
+            background-color: #E2E3FF;
+            border-radius: 4px;
+            border: 2px solid #C92071;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+
+            img {
+                width: 83.8px;
+                height: 41.7px;
+            }
+        }
+
+        .img2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 117.81px;
+            height: 96px;
+            background-color: #FFE8BC;
+            border-radius: 4px;
+
+            img {
+                width: 83.8px;
+                height: 41.7px;
+            }
+        }
+
+        .img3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 117.81px;
+            height: 96px;
+            background-color: #FFC0BC;
+            border-radius: 4px;
+
+            img {
+                width: 83.8px;
+                height: 41.7px;
+            }
+        }
+
+        .img4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 117.81px;
+            height: 96px;
+            background-color: #DEC699;
+            border-radius: 4px;
+
+            img {
+                width: 83.8px;
+                height: 41.7px;
+            }
+        }
+
+        .img5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 117.81px;
+            height: 96px;
+            background-color: #E8DFCF;
+            border-radius: 4px;
+
+            img {
+                width: 83.8px;
+                height: 41.7px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 335px;
+        height: 340.51px;
+
+        .imgPrincipal {
+            width: 335px;
+            height: 272.98px;
+            padding: 16px;
+
+            button.mediaLeft {
+                display: block;
+            }
+
+            button.normalLeft {
+                display: none;
+            }
+
+            button.normalRight {
+                display: none;
+            }
+
+            button.mediaRight {
+                display: block;
+            }
+
+            img {
+                width: 238.28px;
+                height: 118.56px;
+            }
+        }
+
+        .imgSecundarias {
+            .img1 {
+                width: 60.17px;
+                height: 57.51px;
+
+                img {
+                    width: 42.8px;
+                    height: 24.98px;
+                }
+            }
+
+            .img2 {
+                width: 60.17px;
+                height: 57.51px;
+
+                img {
+                    width: 42.8px;
+                    height: 24.98px;
+                }
+            }
+
+            .img3 {
+                width: 60.17px;
+                height: 57.51px;
+
+                img {
+                    width: 42.8px;
+                    height: 24.98px;
+                }
+            }
+
+            .img4 {
+                width: 60.17px;
+                height: 57.51px;
+
+                img {
+                    width: 42.8px;
+                    height: 24.98px;
+                }
+            }
+
+            .img5 {
+                width: 60.17px;
+                height: 57.51px;
+
+                img {
+                    width: 42.8px;
+                    height: 24.98px;
+                }
+            }
+        }
+    }
+}

@@ -1,73 +1,87 @@
 .ProdutoGeral {
-    .Produto {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-        .caixaImagem {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            width: 292px;
-            height: 321px;
-            background-color: #FFFFFF;
-            box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
-            border-radius: 4px;
+    a {
+        text-decoration: none;
 
-            .ImagemProduto {
-                width: 248px;
-            }
-        }
-        .TipoProduto {
-            width: 35px;
-            height: 24px;
-            color: #8F8F8F;
-            font-size: 12px;
-            font-weight: 700;
-            margin-top: 18px;
-        }
-        .NomeProduto {
-            width: 283px;
-            height: 38px;
-            color: #474747;
-            font-size: 24px;
-            font-weight: 500;
-        }
-        .PrecoProduto {
-            width: 63px;
-            height: 38px;
-            color: #1F1F1F;
-            font-size: 24px;
-            font-weight: 700;
-        }
-    }
-}
 
-@media (max-width: 900px)
-{
-    .ProdutoGeral {
-        max-width: 163px;
         .Produto {
-            margin-bottom: 42px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+
             .caixaImagem {
-                width: 163px;
-                height: 179.19px;
-                box-shadow: 3.34932px 8.93151px 16.7466px rgba(105, 98, 98, 0.05);;
-                border-radius: 2.23288px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                width: 292px;
+                height: 321px;
+                background-color: #FFFFFF;
+                box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
+                border-radius: 4px;
+
                 .ImagemProduto {
-                    width: 124px;
+                    width: 248px;
                 }
             }
-            .NomeProduto {
-                height: 22px;
-                width:149px;
-                white-space: nowrap;
-                font-size: 14px;
-            }
-            .PrecoProduto {
+
+            .TipoProduto {
+                width: 35px;
                 height: 24px;
-                font-size: 16px;
+                color: #8F8F8F;
+                font-size: 12px;
+                font-weight: 700;
+                margin-top: 18px;
+            }
+
+            .NomeProduto {
+                width: 283px;
+                height: 38px;
+                color: #474747;
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .PrecoProduto {
+                width: 63px;
+                height: 38px;
+                color: #1F1F1F;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .ProdutoGeral {
+            max-width: 163px;
+
+            .Produto {
+                margin-bottom: 42px;
+
+                .caixaImagem {
+                    width: 163px;
+                    height: 179.19px;
+                    box-shadow: 3.34932px 8.93151px 16.7466px rgba(105, 98, 98, 0.05);
+                    ;
+                    border-radius: 2.23288px;
+
+                    .ImagemProduto {
+                        width: 124px;
+                    }
+                }
+
+                .NomeProduto {
+                    height: 22px;
+                    width: 149px;
+                    white-space: nowrap;
+                    font-size: 14px;
+                }
+
+                .PrecoProduto {
+                    height: 24px;
+                    font-size: 16px;
+                }
             }
         }
     }
