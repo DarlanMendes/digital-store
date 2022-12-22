@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import NavLink from "../NavLink";
 import Botao from "../Botao";
 import Carrinho from "../Carrinho"
-
+import { Link } from 'react-router-dom';
 export default function Header() {
 
         return (
@@ -35,7 +35,9 @@ export default function Header() {
                                         <div className={styles.botoesContainer}>
 
                                                 <div className={styles.divCadastro}>
-                                                        Cadastre-se
+                                                        <Link to={"/cadastro"}>
+                                                                Cadastre-se
+                                                        </Link>
                                                 </div>
 
                                                 <div className={styles.divBotaoEntrar}>
