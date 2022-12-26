@@ -1,0 +1,42 @@
+@use "sass:math";
+.infoEntregaContainer{
+    padding: 30px;
+    border-radius: 4px;
+    background-color: white;
+    width: math.div(750px,1440px) * 100vw;
+    h1{
+        font-size: 14px;
+        color: #474747;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    hr{
+        margin: 20px 0;
+        background-color: #ccc;
+    }
+    .infoEntregaInput{
+        margin-top: 20px;
+        h2{
+            font-size: 12px;
+            font-weight: 700;
+            height:24px;
+            display: flex;
+            align-items: center;
+        }
+        input{
+            margin-top: 5px;
+            height:60px;
+            width: math.div(690px,1440px)*100vw;
+            border-radius: 8px;
+            border: none;
+            background-color: rgb(71,71,71,0.04);
+            padding: 16px 10.82px;
+           &::placeholder
+            {
+                padding: 16px 10.82px;
+                color:#666666;
+               
+            }
+        }
+    }
+}

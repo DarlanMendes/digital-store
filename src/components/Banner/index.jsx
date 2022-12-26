@@ -29,8 +29,6 @@ const Banner = () => {
 
 
 
-
-
   const MyDot = ({ isActive }) => (
     <span
       style={{
@@ -44,23 +42,18 @@ const Banner = () => {
       }}
     ></span>
   )
-
-
+    
   return (
 
     <div className={styles.bannerContainer}>
       <Carousel cols={1}
         rows={1}
-        gap={10}
+        gap={5}
         showDots={true}
         dot={MyDot}
         loop={true}
         containerStyle={{ height: "681px",width:"100vw", boxSiging:"none"}}
         hideArrow={true}
-        responsiveLayout={[
-          { breakpoint: 462, cols: 1, rows: 1, gap: 2 }
-        ]}
-        mobileBreakpoint={462}
 
       >
         <Carousel.Item >
@@ -69,7 +62,7 @@ const Banner = () => {
               <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
               <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
               <div className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</div>
-              <Botao texto={"Ver Ofertas"} corFundo={'#C92071'} largura={widthButton} style={{ width: '90vw !important' }} />
+              <Botao texto={"Ver Ofertas"} corFundo={'#C92071'} largura={widthButton}  />
             </div>
             <div className={styles.divImageCarouselItem}>
               <img src={tenis} className={styles.tenis} />
@@ -84,8 +77,8 @@ const Banner = () => {
             <div className={styles.divTextoCarouselItem}>
               <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
               <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
-              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
+              <div className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</div>
+              <Botao texto={"Ver Ofertas"} corFundo={'#C92071'} largura={widthButton}  />
             </div>
             <div className={styles.divImageCarouselItem}>
               <img src={tenis} className={styles.tenis} />
@@ -100,8 +93,8 @@ const Banner = () => {
             <div className={styles.divTextoCarouselItem}>
               <h2 className={styles.informativoTexto}>Melhores ofertas personalizadas</h2>
               <h1 className={styles.mainTextoCarousel}>Queima de stoque Nike 🔥</h1>
-              <p className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-              <Botao texto={"Ver Ofertas"} cor={'#C92071'} largura={'220px'} />
+              <div className={styles.descricaoTextoCarousel}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</div>
+              <Botao texto={"Ver Ofertas"} corFundo={'#C92071'} largura={widthButton}  />
             </div>
             <div className={styles.divImageCarouselItem}>
               <img src={tenis} className={styles.tenis} />
@@ -111,6 +104,8 @@ const Banner = () => {
             </div>
           </div>
         </Carousel.Item>
+
+
       </Carousel>
     </div>
   )

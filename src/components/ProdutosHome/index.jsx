@@ -1,6 +1,5 @@
 import estilo from './styles.module.scss'
 import ProdutoCard from '../ProdutoCard'
-
 export default function ProdutoHome() {
     return (
         <div className={estilo.containerProdutosEmAlta}>
@@ -14,7 +13,7 @@ export default function ProdutoHome() {
                 <a href="">Ver todos -{">"}</a>
             </div>
             <div className={estilo.containerProdutos}>
-                <ProdutoCard />
+                <ProdutoCard id={1} />
                 <ProdutoCard />
                 <ProdutoCard />
                 <ProdutoCard />

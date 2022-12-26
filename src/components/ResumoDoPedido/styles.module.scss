@@ -1,0 +1,266 @@
+.containerTotal {
+    display: none;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 334px;
+    height: 364px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerValores {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 274px;
+        height: 324px;
+
+        label {
+            font-weight: 700;
+            font-size: 14px;
+            color: #474747;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .subtotal {
+            display: flex;
+            justify-content: space-between;
+            color: #1F1F1F;
+            font-size: 14px;
+            letter-spacing: 0.75px;
+            font-weight: 500;
+            margin-bottom: 20px;
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                color: #8F8F8F;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .frete {
+            display: flex;
+            justify-content: space-between;
+            color: #1F1F1F;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.75px;
+            margin-bottom: 20px;
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                color: #8F8F8F;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .desconto {
+            display: flex;
+            justify-content: space-between;
+            color: #1F1F1F;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                color: #8F8F8F;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            color: #EE4266;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: 0.75px;
+
+            label {
+                font-weight: 700;
+                font-size: 18px;
+                color: #1F1F1F;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .parcelamento {
+            font-weight: 500;
+            font-size: 12px;
+            color: #8F8F8F;
+            text-align: right;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+    }
+
+}
+
+@media (max-width: 900px) {
+    .containerGeral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 315px;
+            height: 304px;
+            .containerValores {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 255px;
+                height: 244px;
+
+                label {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #474747;
+                }
+
+                hr {
+                    margin: 20px 0;
+                }
+
+                .subtotal {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #1F1F1F;
+                    font-size: 14px;
+                    letter-spacing: 0.75px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+
+                    label {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #8F8F8F;
+                        letter-spacing: 0.75px;
+                    }
+                }
+
+                .frete {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #1F1F1F;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.75px;
+                    margin-bottom: 20px;
+
+                    label {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #8F8F8F;
+                        letter-spacing: 0.75px;
+                    }
+                }
+
+                .desconto {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #1F1F1F;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+
+                    label {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #8F8F8F;
+                        letter-spacing: 0.75px;
+                    }
+                }
+
+                .total {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #EE4266;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                    letter-spacing: 0.75px;
+
+                    label {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #1F1F1F;
+                        letter-spacing: 0.75px;
+                    }
+                }
+
+                .parcelamento {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #8F8F8F;
+                    text-align: right;
+                    margin-bottom: 20px;
+                    letter-spacing: 1px;
+                }
+
+                .botao {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .containerTotal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        height: 175px;
+        color: #FFFFFF;
+        margin-top: 123px;
+        box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+
+        .totalComBotao {
+            width: 315px;
+            height: 116px;
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+                color: #EE4266;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 4px;
+                letter-spacing: 0.75px;
+
+                label {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #1F1F1F;
+                    letter-spacing: 0.75px;
+                }
+            }
+
+            .parcelamento {
+                font-weight: 500;
+                font-size: 12px;
+                color: #8F8F8F;
+                text-align: right;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+
+            .botao {
+                display: block;
+            }
+        }
+    }
+}

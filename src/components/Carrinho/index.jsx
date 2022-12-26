@@ -12,7 +12,7 @@ export default function Carrinho() {
     let compras = [{ imgProd: tenisAdicionado, textProdTitle: "Tênis Nike Revolution", commentProd:"6 Next Nature Masculino", precoAtual: " 219,00", precoAnterior: " 219,00" },
     { imgProd: tenisAdicionado, textProdTitle: "Tênis Nike Revolution", commentProd:"6 Next Nature Masculino", precoAtual: " 229,00", precoAnterior: " 219,00" }];
     useEffect(() => {
-
+        total =0;
         setComprasAdicionadas(compras);
         compras.forEach((compra)=>{
             total = total+eval((compra.precoAtual).replace(',','.'))
