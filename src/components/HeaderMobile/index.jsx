@@ -11,13 +11,19 @@ import { FaBars } from "react-icons/fa";
 
 export default function HeaderMobile() {
 
-        return (<div>
-                <FaBars />
+        return (<div className={styles.headerMobileContainer}>
+                
+                <IconContext.Provider value={{ color: "rgb (102,102,102)", className:styles.hamburguer }}>
+                        <FaBars className={styles.posicaoIconHamburguer} />
+                </IconContext.Provider>
+                        
+               
+                
                 <div className={styles.imgContainer}>
                         <img src={logo} alt="Logo Digital College" className={styles.imagemLogo} />
 
-                        <div className={styles.tituloLogo}>
-                                Digital Store
+                        <div className={styles.tituloLogo} >
+                               <span>Digital Store</span> 
                                 <IconContext.Provider value={{ color: "rgb (102,102,102)", className: styles.icon }}>
                                         <CiSearch className={styles.posicaoIconSearch} />
                                 </IconContext.Provider>

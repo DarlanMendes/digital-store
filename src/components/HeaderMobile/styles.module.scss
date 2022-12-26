@@ -1,78 +1,101 @@
-.imgContainer {
-        height: 60px;
-        width: 375px;
+@use "sass:math";
+$coeficiente:0.26666;
+.headerMobileContainer {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        border: 2px solid red;
-
-        .imagemLogo {
-                width: 4.8vw;
-                margin-left: 118px;
-        }
-
-        .tituloLogo {
-                height: 60px;
-                margin-left: 1.0186vw;
-                font-size: 19.85px;
-                font-weight: 600;
-                line-height: 44px;
-                color: #C92071;
-                font-family: 'Inter', sans-serif;
+        height:66.5px;
+       
+        .hamburguer{
                 display: flex;
                 align-items: center;
-                white-space: nowrap;
-                border: 2px solid red;
-
-        }
-
-        .carrinho {
-                font-size: 18.5px;
-                color: #c92071;
-                margin-left: -10px;
-                margin-top: -10px;
-        }
-
-        .qtdComprasAdicionadas {
-                display: flex;
+                height:65px;
+                width:22vw*$coeficiente;
                 justify-content: center;
-                align-items: center;
-                height: 13px;
-                width: 13px;
-                background-color: #c92071;
-                border-radius: 100%;
-                position: relative;
-                top: 5px;
-                padding: 2px;
-
-                span {
-                        color: white;
-                        font-size: 12px;
-                        font-weight: 700;
-                }
+                margin-left:21vw*$coeficiente;
+                margin-right:75vw*$coeficiente;
+                
         }
-
-        .Carrinho {
-                margin-left: 18.45px;
+        .imgContainer {
+              
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: center;
-                margin-top: -7px;
-                border: 2px solid red;
+               
+
+                .imagemLogo {
+                       width:18vw*$coeficiente;
+                       margin-right:4.36vw*$coeficiente;
+                      
+                }
+
+                .tituloLogo {
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                       span{
+                        font-size: 19.85vw*$coeficiente;
+                        font-weight: 600;
+                        line-height: 44px;
+                        color: #C92071;
+                        font-family: 'Inter', sans-serif;
+                        margin-right:34.95vw*$coeficiente;
+                       }
+                       
+
+                }
+
+                .carrinho {
+                        font-size: 18.5px;
+                        color: #c92071;
+                       
+                        margin-top: -10px;
+                }
+
+                .qtdComprasAdicionadas {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 13px;
+                        width: 13px;
+                        background-color: #c92071;
+                        border-radius: 100%;
+                        position: relative;
+                        top: 5px;
+                        padding: 2px;
+
+                        span {
+                                color: white;
+                                font-size: 12px;
+                                font-weight: 700;
+                        }
+                }
+
+                .Carrinho {
+                        margin-left:-300.45vw*$coeficiente;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: -7px;
+                        margin-left:29.93vw*$coeficiente;
+                       
+                }
         }
 }
-
 
 
 .icon {
         position: relative;
         color: rgb(102, 102, 102);
+        
 }
 
 
 .posicaoIconSearch {
-        margin-left: 34.95px;
-        width: 19.98px;
-        height: 19.98px;
+        width: 19.98vw*$coeficiente;
+        height: 19.98vw*$coeficiente;
+}
+.posicaoIconHamburguer {
+        width: 22vw*$coeficiente;
+        height: 22vw*$coeficiente;
 }

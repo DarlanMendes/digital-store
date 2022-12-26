@@ -9,17 +9,29 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
-import ProdutoSelecionado from './components/ProdutoSelecionado'
+import ProdutoSelecionado from './components/ProdutoSelecionado';
+import HeaderMobile from './components/HeaderMobile';
+import { useEffect,useState } from 'react';
 function App() {
+ 
+ const[larguraTela, setLarguraTela]= useState();
+ 
 
 
+useEffect(()=>{ 
+  window.addEventListener('resize',()=>{
+    setLarguraTela(window.innerWidth)
+  })
+},[])
+  
+ 
 
 
   return (
     <div className={styles}>
-
-
-      <Header />
+      {larguraTela>=600?<Header/>:<HeaderMobile/>}
+      
+      
       <Routes>
         <Route path="/produtos" >
           <Route index element={<Produtos/>}/>
