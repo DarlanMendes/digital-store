@@ -11,10 +11,10 @@ import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
-import { useEffect,useState } from 'react';
+import { useEffect,useState} from 'react';
 function App() {
  
- const[larguraTela, setLarguraTela]= useState();
+ const[larguraTela, setLarguraTela]= useState(window.innerWidth);
  
 
 
@@ -24,12 +24,12 @@ useEffect(()=>{
   })
 },[])
   
- 
+
 
 
   return (
     <div className={styles}>
-      {larguraTela>=600?<Header/>:<HeaderMobile/>}
+      {larguraTela&&larguraTela>=600?<Header/>:<HeaderMobile/>}
       
       
       <Routes>
