@@ -1,0 +1,171 @@
+.container {
+    width: 750px;
+    height: 647px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid red;
+    .titulo {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .informacoes {
+        .endereco {
+            margin: 0 0 20px 0;
+
+            .tituloEndereco {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0 0 5px 0;
+            }
+
+            input {
+                all: unset;
+                background-color: rgb(71, 71, 71, 0.04);
+                border-radius: 8px;
+                width: calc(100% - 24px);
+                padding: 0 12px;
+                height: 60px;
+                border-radius: 8px;
+            }
+
+            input::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #666666;
+                opacity: 0.6;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .bairro {
+            margin: 0 0 20px 0;
+
+            .tituloBairro {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0 0 5px 0;
+            }
+
+            input {
+                all: unset;
+                background-color: rgb(71, 71, 71, 0.04);
+                border-radius: 8px;
+                width: calc(100% - 24px);
+                padding: 0 12px;
+                height: 60px;
+                border-radius: 8px;
+            }
+
+            input::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #666666;
+                opacity: 0.6;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .cidade {
+            margin: 0 0 20px 0;
+
+            .tituloCidade {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0 0 5px 0;
+            }
+
+            input {
+                all: unset;
+                background-color: rgb(71, 71, 71, 0.04);
+                border-radius: 8px;
+                width: calc(100% - 24px);
+                padding: 0 12px;
+                height: 60px;
+                border-radius: 8px;
+            }
+
+            input::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #666666;
+                opacity: 0.6;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .cep {
+            margin: 0 0 20px 0;
+
+            .tituloCep {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0 0 5px 0;
+            }
+
+            input {
+                all: unset;
+                background-color: rgb(71, 71, 71, 0.04);
+                border-radius: 8px;
+                width: calc(100% - 24px);
+                padding: 0 12px;
+                height: 60px;
+                border-radius: 8px;
+                padding-left:12px;
+            }
+
+            input::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #666666;
+                opacity: 0.6;
+                letter-spacing: 0.75px;
+            }
+        }
+        .complemento {
+            margin: 0 0 20px 0;
+
+            .tituloComplemento {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0 0 5px 0;
+            }
+
+            input {
+                all: unset;
+                background-color: rgb(71, 71, 71, 0.04);
+                border-radius: 8px;
+                width: calc(100% - 24px);
+                padding: 0 12px;
+                height: 60px;
+                border-radius: 8px;
+            }
+
+            input::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #666666;
+                opacity: 0.6;
+                letter-spacing: 0.75px;
+            }
+        }
+    }
+
+
+}

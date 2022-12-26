@@ -139,10 +139,8 @@
                 line-height: 24px;
                 background-color: white;
             }
-
-            button:hover {
-                background-color: #C92071;
-                color: #FFFFFF;
+            button:hover{
+                cursor: pointer;
             }
         }
     }
@@ -170,7 +168,9 @@
                 border-radius: 50%;
                 border: 2px solid #FFFFFF;
             }
-
+            button:hover{
+                cursor: pointer;
+            }
             .cor {
                 display: flex;
                 align-items: center;
