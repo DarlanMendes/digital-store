@@ -1,25 +1,24 @@
-// *{
-//     margin:0px;
-//     padding:0px;
-// }
+
 .ofertaEspecialContainer{
     height:553px;
     width:100vw;
    display: flex;
-   justify-content: center;
+   justify-content: center; 
+   
     .imagemContainer{
         display: flex;
         justify-content: center;
         align-items: center;
-        //max-width: 573px;
         width: 39.54vw;
         height:466px;
         padding-left: 0 4.28vw 0 3.58vw ;
         .elipse{
             position: absolute;
+            left:8.95vw;
         }
         .tenis{
            position: absolute;
+           left:3.61vw;
         }
     }
     .textoContainer{
@@ -48,9 +47,9 @@
             margin-bottom: 0;
         }
         p{
-          width:589px;  
+          width:40.902vw;  
           font-weight: 400;
-          font-size:16px;
+          font-size:1.1111vw;
           line-height: 28px;
           color: #474747;
           margin-top: 20px;
@@ -59,7 +58,7 @@
     }
 
 }
-@media (max-width:900px){
+@media screen and (max-width:900px){
     .ofertaEspecialContainer{
         height:701px;
         display:flex;

@@ -13,16 +13,13 @@
 .title {
 	width: 283px;
 	height: 38px;
-	margin: 38px 1057px 20px 100px;
+	width:100%;
+	margin:38px 0 20px 13.88vw;
+	 h3{
+		text-align: start;
+		font-size: 24px;
+	 }
 }
-
-// .cards {
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: center;
-// 	gap: 12px;
-// 	padding: 0 100px;
-// }
 
 .subTitle {
 	display: flex;
@@ -46,14 +43,10 @@
 	img {
 		width: 104px;
 		height: 104px;
-		// width: 64px;
-		// height: 63.92px;
-		// border-radius: 50%;
-
 		border-radius: 50%;
 
 		background: #e5e5e5;
-		// padding: 10px;
+		
 	}
 }
 
@@ -66,24 +59,7 @@
 		height: 104px;
 	}
 }
-// .iconSelected {
-// 	display: flex;
-// 	align-items: center;
-// 	flex-direction: column;
-// 	width: 104px;
-// 	height: 104px;
-// 	img {
-// 		// width: 104px;
-// 		// height: 104px;
-// 		// width: 64px;
-// 		// height: 63.92px;
-// 		// border-radius: 50%;
 
-// 		border-radius: 50%;
-
-// 		background: #e5e5e5;
-// 	}
-// }
 
 span {
 	font-weight: bold;
@@ -92,7 +68,7 @@ span {
 .wrapper {
 	display: flex;
 	justify-content: space-around;
-
+	flex-wrap: wrap;
 	gap: 12px;
 }
 .CardContainer {
