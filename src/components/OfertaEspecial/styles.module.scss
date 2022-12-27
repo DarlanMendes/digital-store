@@ -60,8 +60,59 @@
 }
 @media screen and (max-width:900px){
     .ofertaEspecialContainer{
-        height:701px;
+       //margin-top: 40.13vw;
+       background-color: white;
         display:flex;
         flex-direction:column;
+        height:186vw;
+        .imagemContainer{
+            border:1px solid red;
+            height:92.53vw;
+            width:100vw;
+            .tenis{
+                margin-top:11.2vw;
+                width:80.26vw;
+                 
+            }
+            .elipse{
+                margin-top:10.66vw;
+                margin-left:5vw  ;
+                width:74.66vw;
+            }
+        }
+        .textoContainer{
+            width:100vw;
+            border:1px solid red;
+            padding-left: 5.33vw;
+            
+            span{
+                font-size: 3.73vw;
+                color:#F6AA1C;
+                border:1px solid red;
+                margin-top: 0;
+            }
+            h2{
+                width:82.4vw;
+                font-size: 7.46vw;
+                height: 19.2vw;
+                font-weight: 700;
+                line-height: 9.6vw;
+                border:1px solid red;
+                margin-top: 2.6666vw;
+            }
+            p{
+                font-size: 3.73vw;
+                font-weight: 500;
+                width:89.33vw;
+                // height:110px;
+                border:1px solid red;
+                margin-top: 5.3333vw;
+                margin-bottom: 8vw;
+            }
+            .botao{
+              margin-bottom: 13.33vw;
+                
+            }
+        }
     }
 }
