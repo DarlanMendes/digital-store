@@ -11,25 +11,13 @@ import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
-import { useEffect,useState} from 'react';
+
 function App() {
  
- const[larguraTela, setLarguraTela]= useState(window.innerWidth);
- 
-
-
-useEffect(()=>{ 
-  window.addEventListener('resize',()=>{
-    setLarguraTela(window.innerWidth)
-  })
-},[])
-  
-
-
-
   return (
     <div className={styles}>
-      {larguraTela&&larguraTela>=600?<Header/>:<HeaderMobile/>}
+      <Header/>
+      <HeaderMobile/>
       
       
       <Routes>

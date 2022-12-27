@@ -116,3 +116,8 @@ $coeficiente:0.26666;
                 height:100vh;
         }
 }
+@media screen and (min-width:600px){
+        .headerMobileContainer{
+                display:none;
+        }
+}
