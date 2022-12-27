@@ -1,11 +1,106 @@
 .containerCadastro {
-    background-color: blue;
-    height:200px;
-    h1{
-        color:white;
-    }
-    img{
-        height:30px;
-    }
+    height: 399px;
+    width: 583px;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: white; 
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 446px;
+}
 
+.subcontainerSecundario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 212px;
+    margin-top: 30px;
+}
+
+.criarConta {
+    font-weight: 700;
+    width: 255px;
+    height: 34px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+::-webkit-input-placeholder {
+    padding: 16px 24.61px;
+    
+}
+
+.conviteAoCadastramento1 {
+    height: 24px;
+    width: 255px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+u {
+    color: black;
+}
+
+.emailComAsterisco {
+    width: 53px;
+    height: 24px;
+    left: 30px;
+    top: 118px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.campoDeDigitacaoDoEmail {
+    margin-bottom: 30px;
+    width: 523px;
+}
+
+input {
+    height: 60px;
+    width: 255px;
+    left: 30px;
+    top: 147px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F8F8F8;
+}
+
+.conviteAoCadastramento2 {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    left: 250px;
+}
+
+.iconeGmail {
+    height: 23.85px;
+    width: 24px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin-left: 75px;
+    margin-right: 25px;
+}
+
+.iconeFacebook {
+    height: 23.85px;
+    width: 24px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
 }
