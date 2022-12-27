@@ -1,0 +1,63 @@
+.container {
+    width: 750px;
+    height: 248px;
+    padding: 30px;
+
+    .titulo {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    hr {
+        margin: 20px 0;
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+
+        .tituloTotal {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 34px;
+            color: #1F1F1F;
+        }
+
+        .divValor {
+            margin-bottom: 20px;
+
+            .valor {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 34px;
+                color: #EE4266;
+                text-align: end;
+            }
+
+            .parcelamento {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 22px;
+                color: #8F8F8F;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 375px;
+        height: 176px;
+        border: #EE4266 1px solid;
+        .titulo {
+            display: none;
+            
+        }
+        hr{
+            display: none;
+        }
+    }
+
+}
