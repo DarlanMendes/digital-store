@@ -9,17 +9,17 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
-import ProdutoSelecionado from './components/ProdutoSelecionado'
+import ProdutoSelecionado from './components/ProdutoSelecionado';
+import HeaderMobile from './components/HeaderMobile';
+
 function App() {
-
-
-
-
+ 
   return (
     <div className={styles}>
-
-
-      <Header />
+      <Header/>
+      <HeaderMobile/>
+      
+      
       <Routes>
         <Route path="/produtos" >
           <Route index element={<Produtos/>}/>

@@ -1,0 +1,123 @@
+@use "sass:math";
+$coeficiente:0.26666;
+.headerMobileContainer {
+        display: flex;
+        flex-direction: row;
+        height:66.5px;
+        width:375vw*$coeficiente;
+        position: fixed;
+        top:0;
+        margin-bottom: 65px;
+        background-color: white;
+        .hamburguer{
+                display: flex;
+                align-items: center;
+                height:65px;
+                width:22vw*$coeficiente;
+                justify-content: center;
+                margin-left:21vw*$coeficiente;
+                margin-right:75vw*$coeficiente;
+                
+        }
+        .imgContainer {
+              
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+               
+
+                .imagemLogo {
+                       width:18vw*$coeficiente;
+                       margin-right:4.36vw*$coeficiente;
+                      
+                }
+
+                .tituloLogo {
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                       span{
+                        font-size: 19.85vw*$coeficiente;
+                        font-weight: 600;
+                        line-height: 44px;
+                        color: #C92071;
+                        font-family: 'Inter', sans-serif;
+                        margin-right:34.95vw*$coeficiente;
+                       }
+                       
+
+                }
+
+                .carrinho {
+                        font-size: 18.5px;
+                        color: #c92071;
+                       
+                        margin-top: -10px;
+                }
+
+                .qtdComprasAdicionadas {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 13px;
+                        width: 13px;
+                        background-color: #c92071;
+                        border-radius: 100%;
+                        position: relative;
+                        top: 5px;
+                        padding: 2px;
+
+                        span {
+                                color: white;
+                                font-size: 12px;
+                                font-weight: 700;
+                        }
+                }
+
+                .Carrinho {
+                        margin-left:-300.45vw*$coeficiente;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: -7px;
+                        margin-left:29.93vw*$coeficiente;
+                       
+                }
+        }
+}
+
+
+.icon {
+        position: relative;
+        color: rgb(102, 102, 102);
+        
+}
+
+
+.posicaoIconSearch {
+        width: 19.98vw*$coeficiente;
+        height: 19.98vw*$coeficiente;
+}
+.posicaoIconHamburguer {
+        width: 22vw*$coeficiente;
+        height: 22vw*$coeficiente;
+}
+.popHamburguer{
+        position: fixed;
+        background-color:rgb(31,31,31,0.4);
+        width:375vw*$coeficiente;
+        top:65px;
+        left:0;
+        .divNavLink{
+                position: inherit;
+                background-color: white;
+                width:308vw*$coeficiente;
+                height:100vh;
+        }
+}
+@media screen and (min-width:600px){
+        .headerMobileContainer{
+                display:none;
+        }
+}
