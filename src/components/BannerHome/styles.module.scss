@@ -57,6 +57,7 @@ $coeficiente_desk:0.06944;
             }
             .botao{
                 margin-top:40px;
+                width:220px;
             }
         }
         .imagemContainer{
@@ -79,8 +80,34 @@ $coeficiente_desk:0.06944;
     }
 
 }
+
+
+.radioContainer{
+    display:flex;
+    flex-direction: row;
+    top:42.5vw;
+    position: relative;
+    right:40vw;
+    margin-right: 10px;
+    input{
+        height:12px;
+        width:12px;
+        
+        
+        accent-color:"#CCCCCC";
+        
+        
+    }
+    input[type='radio']{
+            border: none;
+            outline:0;
+        
+    }
+}
 @media screen and (max-width:800px){
     .bannerContainer {
+        height: 760vw*$coeficiente_desk;
+
         .subContainerBanner {
             .textoContainer {
                 
@@ -105,10 +132,14 @@ $coeficiente_desk:0.06944;
         }
     
     } 
+    .radioContainer{
+        top:49.5vw;
+    }
+
 }
 @media screen and (max-width:600px){
     .bannerContainer{
-        overflow-x: hidden;
+        overflow: hidden;
         margin-top: 66.5px;
         width: 100vw;
         padding: 0px 20px;
@@ -121,6 +152,7 @@ $coeficiente_desk:0.06944;
             justify-content: flex-end;
             align-items: center;
             flex-wrap: wrap;
+            margin-left: 17vw;
             .textoContainer{
                 width:335px;
                 margin:0px;
@@ -152,6 +184,7 @@ $coeficiente_desk:0.06944;
                 }
                 .botao{
                     margin-top:40px;
+                    width:80vw;
                 }
             }
             .imagemContainer{
@@ -160,7 +193,7 @@ $coeficiente_desk:0.06944;
                 .imagem{
                     
                     top:55px;
-                    left: 14px;
+                    left: 24px;
                     height:calc(400px * 0.4);
                     width:calc(566px * 0.4);
                 }
@@ -172,5 +205,9 @@ $coeficiente_desk:0.06944;
                 }
             }
         }
+    }
+    .radioContainer{
+        top:610px;
+        left:-45.5vw;
     }
 }

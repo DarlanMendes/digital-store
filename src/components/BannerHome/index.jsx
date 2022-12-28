@@ -15,7 +15,7 @@ export default function BannerHome() {
         }
         , {
             subtitulo: "Melhores ofertas personalizadas",
-            titulo: "Queima de stoque Nike 🔥",
+            titulo: "Tênis novos para você ",
             paragrafo: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             imagemP:ImagemP,
             backImagem: backImagem
@@ -29,7 +29,7 @@ export default function BannerHome() {
         },
         {
             subtitulo: "Melhores ofertas personalizadas",
-            titulo: "Queima de stoque Nike 🔥",
+            titulo: "Teste de stoque Nike 🔥",
             paragrafo: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             imagemP:ImagemP,
             backImagem: backImagem
@@ -47,7 +47,7 @@ export default function BannerHome() {
                             <div className={styles.botao}>
                                 <Botao
                                     texto={"Ver Ofertas"}
-                                    largura={"220px"}
+                                    largura={"100%"}
                                     altura={"48px"}
                                     corFundo={"#C92071"}
                                 />
@@ -63,12 +63,20 @@ export default function BannerHome() {
                             src={banner.backImagem}
                              alt="imagem background"/>
                         </div>
-                       
+                        
                     </div>
 
 
                 ))}
-            
+                {banners.map(( a,index)=>(
+                    <div key={index} className={styles.radioContainer}>
+                       
+                        <input type={"radio"} 
+                       checked={showBanner===index?'true':'false'}
+                        onClick={()=>{setShowBanner(index)}}
+                        style={showBanner===index?{accentColor:"#C92071"}:{accentColor:"#CCCCCC"}}/>
+                    </div>
+                ))}
 
         </div>
     )
