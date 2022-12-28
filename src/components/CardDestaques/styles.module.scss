@@ -13,7 +13,7 @@
 .title {
 	height: 38px;
 	width: 90%;
-	margin:38px 0 20px 6.88vw;
+	margin:38px 0 20px 3.95vw;
 	 h3{
 		text-align: start;
 		font-size: 24px;
@@ -31,7 +31,9 @@
 	align-items: center;
 	justify-content: space-around;
 	width: 712px;
+	max-width: 100vw;
 	height: 138px;
+	overflow-x: hidden;
 }
 
 .iconeItem {
@@ -44,7 +46,7 @@
 		height: 104px;
 		border-radius: 50%;
 
-		background: #e5e5e5;
+		background: white;
 		
 	}
 }
@@ -93,4 +95,20 @@ span {
 	line-height: 36px;
 	letter-spacing: 1px;
 	color: #1f1f1f;
+}
+@media screen and (max-width:600px){
+	.CardContainer{
+		width:90.13vw;
+		height:56.53vw;
+		background-size: 200px;
+		padding:20px;
+	}
+	.cardTitle{
+		width:51.73vw;
+		font-size: 7.46vw;
+		margin-bottom: 2.6667vw;
+	}
+	.title{
+		font-size: 16px;
+	}
 }

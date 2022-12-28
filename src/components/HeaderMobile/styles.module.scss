@@ -1,6 +1,7 @@
 @use "sass:math";
 $coeficiente:0.26666;
 .headerMobileContainer {
+        z-index:1000;
         display: flex;
         flex-direction: row;
         height:66.5px;
