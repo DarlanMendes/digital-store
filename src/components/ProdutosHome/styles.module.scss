@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-   // padding:0 6.94vw;
+   padding:0 5.335vw;
     .containerTitulo {
         display: flex;
         flex-direction: row;
@@ -32,7 +32,7 @@
         flex-wrap: wrap;
         justify-content: start;
         gap:1.66vw;
-        max-width:86.4vw;
+        width:90.4vw;
     }
     div.TituloII{
         display: none;
@@ -42,8 +42,10 @@
 
 @media (max-width: 900px) {
     .containerProdutosEmAlta {
-       
-        padding: 0 6.12vw;
+        width:100vw;
+        
+        flex-wrap: nowrap;
+        
         .containerTitulo {
             align-items: center;
             div.Titulo{
