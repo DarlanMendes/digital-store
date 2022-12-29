@@ -15,7 +15,8 @@ export default function HeaderMobile() {
         return (<div className={styles.headerMobileContainer}>
 
                 <IconContext.Provider value={{ color: "rgb (102,102,102)", className: styles.hamburguer }}>
-                        <FaBars className={styles.posicaoIconHamburguer} onClick={()=>{setHamburguer(!hamburguer)}}/>
+                        <FaBars className={styles.posicaoIconHamburguer} 
+                        onClick={()=>{setHamburguer(!hamburguer);setPopUpInput(false)}}/>
                 </IconContext.Provider>
 
 
@@ -27,7 +28,7 @@ export default function HeaderMobile() {
                                 <span>Digital Store</span>
                                 <IconContext.Provider value={{ color: '#C92071', className: styles.icon }}>
                                         <CiSearch className={styles.posicaoIconSearch}
-                                         onClick={()=>{setPopUpInput(!popUpInput)}}/>
+                                         onClick={()=>{setPopUpInput(!popUpInput);setHamburguer(false)}}/>
                                 </IconContext.Provider>
 
                         </div>
@@ -35,8 +36,10 @@ export default function HeaderMobile() {
                                 <Carrinho />
                         </div>
                         <div className={styles.popHamburguer} style={hamburguer?{left:0}:{left:"-100vw"}} onClick={()=>{setHamburguer(false)}}>
+                                <div className={styles.divNavLinkFundo}>
                                 <div className={styles.divNavLink}>
                                         <NavLinkMobile/>
+                                </div>
                                 </div>
                         </div>
 

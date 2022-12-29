@@ -125,15 +125,19 @@ $coeficiente:0.26666;
 }
 .popHamburguer{
         position: fixed;
-        background-color:rgb(31,31,31,0.4);
+        
         width:375vw*$coeficiente;
         top:65px;
         left:0;
-        .divNavLink{
-                position: inherit;
-                background-color: white;
-                width:308vw*$coeficiente;
-                height:100vh;
+        .divNavLinkFundo{
+                 width:100vw;
+                 background-color:rgb(31,31,31,0.4); ;
+                .divNavLink{
+                        position: inherit;
+                        background-color: white;
+                        width:308vw*$coeficiente;
+                        height:100vh;
+                }
         }
 }
 @media screen and (min-width:600px){

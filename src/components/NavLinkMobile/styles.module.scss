@@ -1,4 +1,4 @@
-
+$coeficiente:0.26666;
 
 .navLinkContainer {
     display: flex;
@@ -6,13 +6,16 @@
     justify-content: space-between;
     gap: 32px;
     width:423px;
+    width:308vw*$coeficiente;
     height: 28px;
     list-style-type: none;
-    padding: 0;
+    padding: 30px;
     margin: 0;
-    
+    .tituloLinks{
+        font-size: 16px;
+    }
     .navLink {
-        
+        margin-top: -10px;
         a{
             text-decoration: none;
             color:#474747;
@@ -23,6 +26,26 @@
             color:#C92071;
             font-weight: 700;
             border-bottom: 2px solid #C92071;
+        }
+    }
+    .containerAutenticacao{
+        width:308vw*$coeficiente;
+        position:relative;
+        top:272px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        hr{
+            width:248vw*$coeficiente;
+            margin-bottom:20px;
+        }
+        .linkCadastro{
+            text-align: center;
+            width:calc(100% - 60px);
+            color:#474747;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 17px;  
         }
     }
 }
