@@ -1,0 +1,194 @@
+.container {
+    width: 750px;
+    height: 515px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
+    .titulo {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #474747;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .formaDePagamento {
+        .tituloFormaDePagamento {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 24px;
+            color: #474747;
+            margin-bottom: 20px;
+        }
+
+        .inputsFormaDePagamento {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #474747;
+            margin-bottom: 20px;
+
+            input[type="radio"] {
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+
+            input[type="radio"]:checked {
+                accent-color: #C92071;
+            }
+
+            label {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .nomeCartao {
+        color: #474747;
+        margin-bottom: 20px;
+
+        .tituloNomeCartao {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 0 0 5px 0;
+        }
+
+        input {
+            all: unset;
+            background-color: rgb(71, 71, 71, 0.04);
+            border-radius: 8px;
+            width: calc(100% - 24px);
+            padding: 0 12px;
+            height: 60px;
+            border-radius: 8px;
+        }
+
+        input::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #666666;
+            opacity: 0.6;
+            letter-spacing: 0.75px;
+        }
+    }
+
+    .numeroCartao {
+        display: flex;
+
+        .cartao {
+            .tituloCartao {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+        }
+
+        .validade {
+            .tituloValidade {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+        }
+
+        input {
+            all: unset;
+            background-color: rgb(71, 71, 71, 0.04);
+            border-radius: 8px;
+            width: calc(100% - 24px);
+            height: 60px;
+            padding: 0 12px;
+            margin-right: 26px;
+        }
+
+        input::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #666666;
+            opacity: 0.6;
+            letter-spacing: 0.75px;
+        }
+    }
+
+    .cvv {
+        color: #474747;
+
+        .tituloCvv {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 0 0 5px 0;
+        }
+
+        input {
+            all: unset;
+            background-color: rgb(71, 71, 71, 0.04);
+            border-radius: 8px;
+            width: calc(100% - 24px);
+            padding: 0 12px;
+            height: 60px;
+            border-radius: 8px;
+        }
+
+        input::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #666666;
+            opacity: 0.6;
+            letter-spacing: 0.75px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 315px;
+        height: 666px;
+
+        .formaDePagamento {
+            display: flex;
+            flex-direction: column;
+
+            .inputsFormaDePagamento {
+                .inputCartao {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .numeroCartao {
+            flex-direction: column;
+
+            .cartao {
+                margin-bottom: 20px;
+                input {
+                    width: calc(100% - 24px); ;
+                }
+            }
+            .validade{
+                margin-bottom: 20px;
+                input {
+                    width: calc(100% - 24px); ;
+                }
+            }
+        }
+        .cvv{
+            input{
+                width: calc(100% - 24px); ;
+            }
+        }
+    }
+
+}

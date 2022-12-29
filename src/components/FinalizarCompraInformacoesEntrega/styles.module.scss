@@ -5,6 +5,7 @@
     border-radius: 4px;
     background-color: white;
     border: 1px solid red;
+
     .titulo {
         font-weight: 700;
         font-size: 14px;
@@ -124,7 +125,7 @@
                 padding: 0 12px;
                 height: 60px;
                 border-radius: 8px;
-                padding-left:12px;
+                padding-left: 12px;
             }
 
             input::placeholder {
@@ -136,6 +137,7 @@
                 letter-spacing: 0.75px;
             }
         }
+
         .complemento {
             margin: 0 0 20px 0;
 
@@ -167,5 +169,13 @@
         }
     }
 
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 315px;
+        height: 647px;
+    }
 
 }

@@ -43,6 +43,22 @@
         align-items: center;
         justify-content: space-between;
 
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 117.81px;
+            height: 96px;
+            background-color: #E2E3FF;
+            border-radius: 4px;
+            border: 2px solid #C92071;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+
+            img {
+                width: 83.8px;
+                height: 41.7px;
+            }
+        }
         .img1 {
             display: flex;
             align-items: center;

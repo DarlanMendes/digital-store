@@ -1,0 +1,199 @@
+.container {
+    width: 468px;
+    height: 532px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
+    .titulo {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        color: #474747;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .produtos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .imgProduto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 2.66916px 16.6822px rgba(0, 0, 0, 0.05);
+            border-radius: 2.66916px;
+            width: 71.18px;
+            height: 58px;
+            background-color: #E2E3FF;
+            padding: 10.3px;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .nomeProduto {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1F1F1F;
+            letter-spacing: 0.75px;
+        }
+    }
+
+    .subtotal {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1F1F1F;
+        letter-spacing: 0.25px;
+        margin-bottom: 20px;
+
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8F8F8F;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    .frete {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1F1F1F;
+        letter-spacing: 0.25px;
+        margin-bottom: 20px;
+
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8F8F8F;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    .desconto {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1F1F1F;
+        letter-spacing: 0.25px;
+        margin-bottom: 20px;
+
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8F8F8F;
+            letter-spacing: 0.25px;
+        }
+    }
+
+    .total {
+        width: 100%;
+        height: 100px;
+        background: rgba(246, 170, 28, 0.05);
+        border: 1px solid rgba(246, 170, 28, 0.15);
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+
+
+        .divValor {
+            display: flex;
+            justify-content: space-between;
+
+            .tituloTotal {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+                color: #1F1F1F;
+            }
+
+            .valor {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+                color: #1F1F1F;
+                text-align: right;
+                letter-spacing: 1px;
+            }
+
+        }
+
+        .parcelamento {
+            text-align: right;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 22px;
+            color: #8F8F8F;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 315px;
+        height: 514px;
+
+        .titulo {
+            font-size: 14px;
+        }
+
+        .produtos {
+            .imgProduto {
+                width: 71.18px;
+                height: 58px;
+            }
+
+            .nomeProduto {
+                width: 163.82px;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .total {
+            height: 96px;
+
+            .divValor {
+
+                .tituloTotal {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 34px;
+                }
+
+                .valor {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 34px;
+                }
+            }
+
+            .parcelamento {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+
+
+}

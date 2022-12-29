@@ -1,0 +1,333 @@
+.container {
+    background-color: #f9f8fe;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .containerCompra {
+        margin-top: 50px;
+        background-color: white;
+        width: 838px;
+        height: 1048px;
+        border-radius: 4px;
+        padding: 30px;
+
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .emoji {
+                img {
+                    height: 74px;
+                }
+            }
+
+            .texto {
+                width: 300px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                color: #1F1F1F;
+                letter-spacing: 0.75px;
+                text-align: center;
+            }
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .informacoesPessoais {
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8F8F8F;
+                letter-spacing: 0.25px;
+                margin: 0 10px 10px 0;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.25px;
+                color: #1F1F1F;
+            }
+
+            .tituloInfPessoais {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #474747;
+                letter-spacing: 0.75px;
+                margin-bottom: 10px;
+            }
+
+            .nome {
+                display: flex;
+            }
+
+            .cpf {
+                display: flex;
+            }
+
+            .email {
+                display: flex;
+            }
+
+            .celular {
+                display: flex;
+            }
+
+        }
+
+        .informacoesDeEntrega {
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8F8F8F;
+                letter-spacing: 0.25px;
+                margin: 0 10px 10px 0;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.25px;
+                color: #1F1F1F;
+            }
+
+            .tituloEntrega {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #474747;
+                letter-spacing: 0.75px;
+                margin-bottom: 10px;
+            }
+
+            .endereco {
+                display: flex;
+
+            }
+
+            .bairro {
+                display: flex;
+            }
+
+            .cidade {
+                display: flex;
+            }
+
+            .cep {
+                display: flex;
+            }
+        }
+
+        .informacoesDePagamento {
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #8F8F8F;
+                letter-spacing: 0.25px;
+                margin: 0 10px 10px 0;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.25px;
+                color: #1F1F1F;
+            }
+
+            .tituloPagamento {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #474747;
+                letter-spacing: 0.75px;
+                margin-bottom: 10px;
+            }
+
+            .tituarCrt {
+                display: flex;
+            }
+
+            .finalCrt {
+                display: flex;
+            }
+
+        }
+
+        .resumoDaCompra {
+            .tituloResumo {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #474747;
+                letter-spacing: 0.75px;
+            }
+
+            .produtos {
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+
+                .imgProduto {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 71.18px;
+                    height: 58px;
+                    background-color: #E2E3FF;
+                    box-shadow: 0px 2.66916px 16.6822px rgba(0, 0, 0, 0.05);
+                    border-radius: 2.66916px;
+                    margin-right: 20px;
+                }
+
+                .nomeProduto {
+                    width: 317.82px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.75px;
+                }
+            }
+
+            .total {
+
+                width: 100%;
+                height: 100px;
+                background: rgba(246, 170, 28, 0.05);
+                border: 1px solid rgba(246, 170, 28, 0.15);
+                border-radius: 4px;
+                padding: 20px;
+                margin: 0 10px 10px 0;
+
+                .divValor {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .tituloTotal {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 38px;
+                        color: #1F1F1F;
+                    }
+
+                    .valor {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 38px;
+                        color: #1F1F1F;
+                        text-align: right;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .parcelamento {
+                    text-align: end;
+                }
+            }
+
+            .recibo {
+                display: flex;
+                justify-content: center;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #474747;
+            }
+        }
+    }
+
+    .botao {
+        width: 838px;
+        margin: 40px 0 120px 0;
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        .containerCompra {
+            width: 315px;
+            height: 1048px;
+            margin-top: 34.5px;
+
+            .titulo {
+                .emoji {
+                    img {
+                        height: 64px;
+                    }
+                }
+
+                .texto {
+                    width: 255px;
+                    font-size: 24px;
+                    line-height: 38px;
+                }
+            }
+
+            .resumoDaCompra {
+                .produtos {
+                    .imgProduto {
+                        width: 71.18px;
+                        height: 58px;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+
+                    .nomeProduto {
+                        width: 164.32px;
+
+                    }
+                }
+
+                .total {
+                    height: 96px;
+
+                    .divValor {
+
+                        .tituloTotal {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 34px;
+                        }
+
+                        .valor {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 34px;
+                        }
+                    }
+
+                    .parcelamento {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+        }
+
+        .botao {
+            width: 315px;
+        }
+    }
+
+}

@@ -4,6 +4,7 @@
     padding: 30px;
     border-radius: 4px;
     background-color: white;
+
     .titulo {
         font-weight: 700;
         font-size: 14px;
@@ -133,5 +134,13 @@
         }
     }
 
+
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 315px;
+        height: 538px;
+    }
 
 }
