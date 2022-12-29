@@ -1,16 +1,15 @@
 .containerProdutosEmAlta {
-   
     background-color: #F9F8FE;
     display:flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-   padding-left:5.335vw;
     .containerTitulo {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
         .Titulo {
             width: 210px;
             height: 38px;
@@ -27,12 +26,12 @@
         }
     }
     .containerProdutos {
+        width: 86vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: start;
-        gap:1.66vw;
-        width:90.4vw;
+        justify-content: space-between;
+        
     }
     div.TituloII{
         display: none;
@@ -42,7 +41,6 @@
 
 @media (max-width: 900px) {
     .containerProdutosEmAlta {
-        width:100vw;
         
         flex-wrap: nowrap;
         
@@ -66,6 +64,7 @@
             }
         }
         .containerProdutos {
+            width:86.6vw;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
