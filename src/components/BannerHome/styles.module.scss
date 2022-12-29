@@ -1,0 +1,213 @@
+$coeficiente_desk:0.06944;
+.bannerContainer {
+    margin: 0px;
+    padding: 0;
+    box-sizing: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 192px;
+    width: 100vw;
+    padding: 0px 37vw*$coeficiente_desk 0 100vw*$coeficiente_desk;
+    background-color: #f5f5f5;
+    height: 681vw*$coeficiente_desk;
+
+    .subContainerBanner {
+        
+        display: none;
+        flex-direction: row;
+        width: 90%;
+       
+
+        .textoContainer {
+            height: 352vw*$coeficiente_desk;
+            width: 510vw*$coeficiente_desk;
+            margin-top:124vw*$coeficiente_desk;
+            margin-right: 70vw*$coeficiente_desk;
+           
+            span {
+                color: #F6AA1C;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                width: 280vw*$coeficiente_desk;
+                height: 24px;
+                letter-spacing: 0.75px;
+               
+            }
+
+            h1 {
+                font-weight: 800;
+                font-size: 64vw*$coeficiente_desk;
+                line-height: 66vw*$coeficiente_desk;
+                width: 510vw*$coeficiente_desk;
+                height: 132vw*$coeficiente_desk;
+                color: #1F1F1F;
+                margin-top: 20vw*$coeficiente_desk;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 34px;
+                letter-spacing: 0.75px;
+                color: #474747;
+                width: 495vw*$coeficiente_desk;
+                height: 68px;
+                margin-top: 20vw*$coeficiente_desk;
+            }
+            .botao{
+                margin-top:40px;
+                width:220px;
+            }
+        }
+        .imagemContainer{
+            
+            .imagem{
+                position: relative;
+                top:100px;
+                margin-top:9.95px;
+                height:400vw*$coeficiente_desk;
+                width:566vw*$coeficiente_desk;
+                object-fit: cover;
+            }
+            .imgBack{
+                width:140vw*$coeficiente_desk;
+                position: relative;
+                top:-355vw*$coeficiente_desk;
+                left:580vw*$coeficiente_desk;
+            }
+        }
+    }
+
+}
+
+
+.radioContainer{
+    display:flex;
+    flex-direction: row;
+    top:42.5vw;
+    position: relative;
+    right:40vw;
+    margin-right: 10px;
+    input{
+        height:12px;
+        width:12px;
+        
+        
+        accent-color:"#CCCCCC";
+        
+        
+    }
+    input[type='radio']{
+            border: none;
+            outline:0;
+        
+    }
+}
+@media screen and (max-width:800px){
+    .bannerContainer {
+        height: 760vw*$coeficiente_desk;
+
+        .subContainerBanner {
+            .textoContainer {
+                
+                margin-top:90vw*$coeficiente_desk;
+                margin-right: 70vw*$coeficiente_desk;
+                
+                span {
+                    color: #F6AA1C;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24vw*$coeficiente_desk;
+                    letter-spacing: 0.75px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 34vw*$coeficiente_desk; 
+                }
+                .botao{
+                    margin-top:50vw*$coeficiente_desk;
+                }
+            }
+        }
+    
+    } 
+    .radioContainer{
+        top:49.5vw;
+    }
+
+}
+@media screen and (max-width:600px){
+    .bannerContainer{
+        overflow: hidden;
+        margin-top: 66.5px;
+        width: 100vw;
+        padding: 0px 20px;
+        background-color: #f5f5f5;
+        height: 662px;
+        justify-content: center;
+        .subContainerBanner {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: 17vw;
+            .textoContainer{
+                width:335px;
+                margin:0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                span{
+                    font-size:14px;
+                    width:248px;
+                    height:22px;
+                    white-space: none;
+                    margin-top: 34px;
+                }
+                h1{
+                   font-size: 40px; 
+                   width:297px;
+                   height: 100px;
+                    margin-top:10px;
+                    line-height: 50px;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    height:66px;
+                    width:325px;
+                    line-height: 22px;
+                    margin-top: 20px;
+                }
+                .botao{
+                    margin-top:40px;
+                    width:80vw;
+                }
+            }
+            .imagemContainer{
+                height:255px;
+                
+                .imagem{
+                    
+                    top:55px;
+                    left: 24px;
+                    height:calc(400px * 0.4);
+                    width:calc(566px * 0.4);
+                }
+                .imgBack{
+                    left:270px;
+                    height:140px;
+                    width:140px;
+                    top:-150px;
+                }
+            }
+        }
+    }
+    .radioContainer{
+        top:610px;
+        left:-45.5vw;
+    }
+}

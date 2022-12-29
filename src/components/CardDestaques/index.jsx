@@ -30,10 +30,11 @@ export default function CardDestaques() {
 					<DestaqueDesconto texto={"30% OFF"} />
 					<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
 					<Botao
-						texto={"Compra"}
+						texto={"Comprar"}
 						corFundo={"#f5f5f5"}
 						cor={"#c92071"}
 						largura={"114px"}
+						altura={"48px"}
 					/>
 				</div>
 				<div
@@ -47,10 +48,11 @@ export default function CardDestaques() {
 					<DestaqueDesconto texto={"30% OFF"} />
 					<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
 					<Botao
-						texto={"Compra"}
+						texto={"Comprar"}
 						corFundo={"#f5f5f5"}
 						cor={"#c92071"}
 						largura={"114px"}
+						altura={"48px"}
 					/>
 				</div>
 				<div
@@ -64,16 +66,17 @@ export default function CardDestaques() {
 					<DestaqueDesconto texto={"30% OFF"} />
 					<h3 className={styles.cardTitle}>Novo drop Supreme</h3>
 					<Botao
-						texto={"Compra"}
+						texto={"Comprar"}
 						corFundo={"#f5f5f5"}
 						cor={"#c92071"}
 						largura={"114px"}
+						altura={"48px"}
 					/>
 				</div>
 			</div>
 
 			<div className={styles.iconWrapper}>
-				{/* <div className={styles.cards}></div> */}
+			
 				<div className={styles.subTitle}>
 					<h3>Coleções em destaque</h3>
 				</div>

@@ -1,10 +1,20 @@
 import styles from './styles.module.scss'
 import faceLogo from '../../assets/images/face-logo.png'
+import gmailLogo from '../../assets/images/gmail-logo.png'
 import Botao from '../Botao'
 export default function CadastroContainer() {
     return (<div className={styles.containerCadastro}>
-        <h1>Antonio</h1>
-        <img src={faceLogo} alt ="logo facebook"/>
-        <Botao cor={'red'} corFundo={'blue'} largura={'200px'} texto={'entre aqui'}/>
+        <div className={styles.subcontainerPrincipal}>
+            <h3 className={styles.criarConta}>Crie sua conta</h3>
+            <p className={styles.conviteAoCadastramento1}>Já possui uma conta? Entre <u>aqui</u>.</p>
+            <p className={styles.emailComAsterisco}>Email *</p>
+            <input type="text" className={styles.campoDeDigitacaoDoEmail} placeholder='Insira seu email' />
+            <Botao cor={'white'} corFundo={'#C92071'} largura={'523px'} altura={'48px'} texto={'Criar Conta'} />
+        </div>
+        <div className={styles.subcontainerSecundario}>
+            <p className={styles.conviteAoCadastramento2}>Ou faça login com</p>
+            <img src={gmailLogo} className={styles.iconeGmail} alt="logo gmail" />
+            <img src={faceLogo} className={styles.iconeFacebook} alt="logo facebook" />
+        </div>
     </div>)
-}
+}                                                                                

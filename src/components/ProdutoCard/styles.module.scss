@@ -52,37 +52,44 @@
         }
     }
 
-    @media (max-width: 900px) {
-        .ProdutoGeral {
+  
+}
+@media (max-width: 900px) {
+    .ProdutoGeral {
+        a{
             max-width: 163px;
-
+          
             .Produto {
                 margin-bottom: 42px;
-
+                width:163px;
+                
                 .caixaImagem {
-                    width: 163px;
+                    width: 162px;
                     height: 179.19px;
                     box-shadow: 3.34932px 8.93151px 16.7466px rgba(105, 98, 98, 0.05);
                     ;
                     border-radius: 2.23288px;
-
+                   
                     .ImagemProduto {
-                        width: 124px;
+                        width:142px;
                     }
                 }
-
+    
                 .NomeProduto {
                     height: 22px;
                     width: 149px;
                     white-space: nowrap;
                     font-size: 14px;
+                    
                 }
-
+    
                 .PrecoProduto {
                     height: 24px;
                     font-size: 16px;
+                    
                 }
             }
         }
+       
     }
 }

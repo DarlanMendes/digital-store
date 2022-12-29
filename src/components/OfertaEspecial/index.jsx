@@ -15,7 +15,10 @@ export default function  OfertaEspecial (){
         <span>Oferta especial</span>
         <h2>Air Jordan edição de colecionador</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum atque perferendis, blanditiis earum accusantium mollitia minus iste autem molestiae, fgfgfgvvvsfgrsrgrgrgrggrrgfefab pariatur minima eius ad quos beatae hic magnam nam.</p>
-        <Botao texto={'Ver Oferta'} cor={'white'} largura={'200px'} corFundo={'#C92071'}/>
+        <div className={styles.botao}>
+        <Botao texto={'Ver Oferta'} cor={'white'} largura={'200px'} corFundo={'#C92071'}  />
+        </div>
+       
       </div>
       
       
