@@ -7,6 +7,7 @@ import Botao from '../Botao';
 export default function Carrinho() {
     const [comprasAdicionadas, setComprasAdicionadas] = useState([]);
     const [abrirCarrinho, setAbrirCarrinho] = useState(false);
+    
     const [valorTotal,setValorTotal] = useState(0)
     let total =0;
     let compras = [{ imgProd: tenisAdicionado, textProdTitle: "Tênis Nike Revolution", commentProd:"6 Next Nature Masculino", precoAtual: " 219,00", precoAnterior: " 219,00" },
@@ -61,6 +62,7 @@ export default function Carrinho() {
                     </div>
 
                 }
+               
             </div>
         </IconContext.Provider>
     )

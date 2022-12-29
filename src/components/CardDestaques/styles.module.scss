@@ -107,8 +107,36 @@ span {
 		width:51.73vw;
 		font-size: 7.46vw;
 		margin-bottom: 2.6667vw;
+		
 	}
 	.title{
 		font-size: 16px;
+	
+	}
+	.subTitle{
+		font-size: 16px;
+		padding: 80px 0 20px 0;
+	}
+	.icones{
+		justify-content: flex-start;
+		height:125px;
+		padding-left: 20px;
+		.iconeItem{
+
+
+			margin-right:19.16px;
+			span{
+				padding-top:10.97px;
+				font-size:12px;
+				text-align: center;
+	
+			}
+			img{
+				height:92.03px;
+				width:92.03px;
+				object-fit: cover;
+				
+			}
+		}
 	}
 }

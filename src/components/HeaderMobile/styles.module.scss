@@ -86,6 +86,25 @@ $coeficiente:0.26666;
                        
                 }
         }
+        .containerPesquisaHeaderMobile{
+                position:fixed;
+                top:66.5px;
+                width:100vw;
+                background-color: white;
+                padding:0 40vw*$coeficiente 20vw*$coeficiente 20vw*$coeficiente ;
+                input{
+                        width:100%;
+                }
+                .containerIconPesquisaPop{
+                        position:fixed;
+                        top:83.28px;
+                        right:63.24vw*$coeficiente;
+                        height:28px;
+                        width:28px;
+                        
+                       
+                }
+        }
 }
 
 
