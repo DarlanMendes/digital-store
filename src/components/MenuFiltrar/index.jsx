@@ -9,7 +9,8 @@ export default function Produtos() {
                 <hr></hr>
                 <h5 className={estilo.subtitulos}>Marka</h5>
                 <div>
-                    <input type="checkbox" />Adiddas
+                    <input type="checkbox" />
+                    <label htmlFor="">Adiddas</label> 
                 </div>
                 <div>
                     <input type="checkbox" />Calenciaga

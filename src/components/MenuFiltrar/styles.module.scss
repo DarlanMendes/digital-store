@@ -1,6 +1,4 @@
-// *{
-//     color: #474747;
-// }
+
 .container {
     display: flex;
     color: #474747;
@@ -31,12 +29,13 @@
         }
         input[type="checkbox"] {
             vertical-align: middle;
-            position: relative;
             margin: 0 10px 0 0;
             width: 22px;
             height: 22px;
         }
-        
+        input[type="checkbox"]:checked{
+            accent-color: #C92071;
+        }
         div {
             font-weight: 500;
             font-size: 14px;
