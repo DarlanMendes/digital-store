@@ -39,7 +39,7 @@ export default function MeusPedidos() {
                     </div>
                     <div className={estilo.parcelamento}> ou 10x de R$ 21,00 sem juros</div>
                     <div className={estilo.botao}>
-                        <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'315px'} altura={'40px'} texto={'Continuar'} />
+                        <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'calc(100%)'} altura={'40px'} texto={'Continuar'} />
                     </div>
                 </div>
             </div>

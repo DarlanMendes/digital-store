@@ -6,24 +6,26 @@ import Produto from '../../components/ProdutoCard'
 export default function ProdutoHome() {
     return (
         <div className={estilo.container}>
-            <div className={estilo.primeiraLinha}> 
-                <div>
-                    <Carrinho />
+            <div className={estilo.meuCarrinho}>
+                <div className={estilo.primeiraLinha}>
+                    <div>
+                        <Carrinho />
+                    </div>
+                    <div>
+                        <Resumo />
+                    </div>
                 </div>
-                <div>
-                    <Resumo />
+                <div className={estilo.segundaLinha}>
+                    <div className={estilo.titulo}>
+                        Produtos Relacionados
+                    </div>
+                    <a href="">Ver todos -{">"}</a>
                 </div>
-            </div>
-            <div className={estilo.segundaLinha}>
-                <div className={estilo.titulo}>
-                    Produtos Relacionados
+                <div className={estilo.terceiraLinha}>
+                    <Produto />
+                    <Produto />
+                    <Produto />
                 </div>
-                <a href="">Ver todos -{">"}</a>
-            </div>
-            <div className={estilo.terceiraLinha}>
-                <Produto />
-                <Produto />
-                <Produto />
             </div>
         </div>
     )

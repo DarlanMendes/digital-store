@@ -1,7 +1,8 @@
 import estilo from './styles.module.scss'
 import botao from '../../components/Botao'
 import Botao from '../../components/Botao'
-import {useState} from "react"
+import { useState } from "react"
+import { Link } from 'react-router-dom'
 export default function ProdutoHome() {
 
     let cores = ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"];
@@ -66,7 +67,7 @@ export default function ProdutoHome() {
                     {
                         tamanhos && tamanhos.map((tamanho, index) => (
                             <div key={index} >
-                                <button  style={numero===index ? {backgroundColor:"#C92071",border: "none",color: "#FFFFFF"}:{backgroundColor:"white"}} onClick= {()=> {
+                                <button style={numero === index ? { backgroundColor: "#C92071", border: "none", color: "#FFFFFF" } : { backgroundColor: "white" }} onClick={() => {
                                     setNumero(index)
                                 }}>{tamanho}</button>
                             </div>
@@ -79,21 +80,25 @@ export default function ProdutoHome() {
                 <div className={estilo.botoesCores}>
                     {
                         cores && cores.map((cor, index) => (
-                            <div className={estilo.cor} key={index} style={selecionado===index ? {border:"2px solid #C92071"}:{border: "none"}}>
-                                <button onClick= {()=> {
+                            <div className={estilo.cor} key={index} style={selecionado === index ? { border: "2px solid #C92071" } : { border: "none" }}>
+                                <button onClick={() => {
                                     setSelecionado(index)
-                                }}style={{backgroundColor: cor}}></button>
+                                }} style={{ backgroundColor: cor }}></button>
                             </div>
                         ))
                     }
                 </div>
             </div>
-            <div className={estilo.botaoNormal}>
-                < Botao cor={'#F5F5F5'} corFundo={'#FFB31F'} largura={'220px'} altura={'48px'} texto={'COMPRAR'} />
-            </div>
-            <div className={estilo.botaoMedia}>
-                < Botao cor={'#F5F5F5'} corFundo={'#FFB31F'} largura={'335px'} altura={'48px'} texto={'COMPRAR'} />
-            </div>
+            <Link to='/meuspedidos'>
+                <div className={estilo.botaoNormal}>
+                    < Botao cor={'#F5F5F5'} corFundo={'#FFB31F'} largura={'220px'} altura={'48px'} texto={'COMPRAR'} />
+                </div>
+            </Link>
+            <Link to='/meuspedidos'>
+                <div className={estilo.botaoMedia}>
+                    < Botao cor={'#F5F5F5'} corFundo={'#FFB31F'} largura={'335px'} altura={'48px'} texto={'COMPRAR'} />
+                </div>
+            </Link>
         </div>
 
     )
