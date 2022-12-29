@@ -1,6 +1,11 @@
 import estilo from './styles.module.scss'
 import img from './assets/White-Sneakers-PNG-Clipart 2.png'
+import { useState } from "react"
 export default function ProdutoHome() {
+
+    let imagens = [{ img }, { img }, { img }, { img }, { img }];
+    const [imagem, setImagem] = useState(0)
+
     return (
         <div>
             <div className={estilo.container}>
@@ -28,24 +33,18 @@ export default function ProdutoHome() {
                     </button>
                 </div>
                 <div className={estilo.imgSecundarias}>
-                    <div className={estilo.img1}>
-                        <img src={img} />
-                    </div>
-                    <div className={estilo.img2}>
-                        <img src={img} />
-                    </div>
-                    <div className={estilo.img3}>
-                        <img src={img} />
-                    </div>
-                    <div className={estilo.img4}>
-                        <img src={img} />
-                    </div>
-                    <div className={estilo.img5}>
-                        <img src={img} />
-                    </div>
-                </div>
+                    {
+                        imagens && imagens.map((imagemProd, index) => (
+                            <div className={estilo.img} key={index}>
+                                <div style={imagem === index ? { border: "2px solid #C92071", boxShadow: "0px 4px 25px rgba(0, 0, 0, 0.05)" } : { border: "none" }} onClick={() => {
+                                }}><img src={img} />
+                                </div>
+                            </div>
+                        ))
+                    }
             </div>
         </div>
+        </div >
 
     )
 }
