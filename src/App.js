@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import FinalizarCompra from './pages/FinalizarCompra';
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
+import CriarConta from './components/CriarConta';
 
 function App() {
  
@@ -29,7 +30,10 @@ function App() {
         <Route path="/meuspedidos" element={<MeusPedidos />} />
         {/* categorias */}
         <Route path='/' element={<Login />} />
-        <Route path='cadastro/' element={<Cadastro />} />
+        <Route path='cadastro/' >
+          <Route index element={<Cadastro/>}/>
+          <Route path=':email' element={<CriarConta/>}/>
+        </Route>
         <Route path='/finalizarcompra' element={<FinalizarCompra />} />
       </Routes>
       <Footer />

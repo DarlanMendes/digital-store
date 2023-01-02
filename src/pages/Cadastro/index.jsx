@@ -3,7 +3,7 @@ import CriarConta from "../../components/CriarConta"
 export default function Cadastro(){
     return(
         <div>
-            <CriarConta/>
+           
             <CadastroContainer/>
         </div>
     )
