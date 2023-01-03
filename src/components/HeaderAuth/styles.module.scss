@@ -1,0 +1,29 @@
+.containerPrincipal{
+    img{
+        height:22.5px;
+        width:22.5px;
+        margin-right: 0.378vw;
+    }
+    h2{
+        color: #C92071;
+        font-size:23.98px;
+    }
+    height:80px;
+    background-color: white;
+    width:100vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6.94vw;
+
+}
+@media screen and (max-width:600px){
+    .containerPrincipal{
+        height:64px;
+        justify-content: center;
+        margin: 0px;
+        h2{
+            font-size: 19.85px;
+        }
+    }
+}
