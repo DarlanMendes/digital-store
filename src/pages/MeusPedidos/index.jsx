@@ -3,7 +3,7 @@ import Resumo from '../../components/ResumoDoPedido'
 import Carrinho from '../../components/MeuCarrinho'
 import Produto from '../../components/ProdutoCard'
 
-export default function ProdutoHome() {
+export default function MeusPedidos() {
     return (
         <div className={estilo.container}>
             <div className={estilo.meuCarrinho}>
