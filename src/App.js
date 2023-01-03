@@ -12,13 +12,21 @@ import FinalizarCompra from './pages/FinalizarCompra';
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
 import CriarConta from './components/CriarConta';
-
+import HeaderAuth from './components/HeaderAuth';
+import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 function App() {
- 
+ const[location,setLocation]=useState(useLocation())
+ console.log(location)
   return (
     <div className={styles}>
-      <Header/>
-      <HeaderMobile/>
+      {location.pathname==='/login'||location.pathname==='/cadastro'?<HeaderAuth/>
+       :<>
+       <Header/>
+        <HeaderMobile/>
+       </>
+      }
+     
       
       
       <Routes>
