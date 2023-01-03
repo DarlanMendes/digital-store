@@ -14,10 +14,13 @@ import HeaderMobile from './components/HeaderMobile';
 import CriarConta from './components/CriarConta';
 import HeaderAuth from './components/HeaderAuth';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 function App() {
- const[location,setLocation]=useState(useLocation())
- console.log(location)
+  let local = useLocation()
+ const[location,setLocation]=useState(local)
+ useEffect(()=>{
+    setLocation(local)
+ })
   return (
     <div className={styles}>
       {location.pathname==='/login'||location.pathname==='/cadastro'?<HeaderAuth/>
