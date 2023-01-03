@@ -2,7 +2,9 @@ import styles from './styles.module.scss';
 import InformacoesPessoais from '../InformacoesPessoais';
 import InformacoesEntrega from '../InformacoesEntrega';
 import Botao from '../Botao';
+
 export default function CriarConta() {
+    
     return (
         <div className={styles.cadastroContainer}>
             <h1 className={styles.tituloContainer}>Criar Conta</h1>
