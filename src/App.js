@@ -15,6 +15,7 @@ import CriarConta from './components/CriarConta';
 import HeaderAuth from './components/HeaderAuth';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import MeusPedidosFinalizados from './components/MeusPedidosFinalizados';
 function App() {
   let local = useLocation()
  const[location,setLocation]=useState(local)
@@ -36,9 +37,10 @@ function App() {
         <Route path="/produtos" >
           <Route index element={<Produtos/>}/>
           <Route path=":id" element={<ProdutoSelecionado/>}/>
+          <Route path="carrinho" element={<MeusPedidos/>}/>
         </Route>
-        <Route path="/home" element={<Home />} />
-        <Route path="/meuspedidos" element={<MeusPedidos />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/meuspedidos" element={<MeusPedidosFinalizados/>} />
         {/* categorias */}
         <Route path='/' element={<Login />} />
         <Route path='cadastro/' >
