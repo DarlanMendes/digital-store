@@ -8,7 +8,7 @@ import { Routes, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
-import FinalizarCompra from './pages/FinalizarCompra';
+import FinalizarCompra from './components/FinalizaCompra'
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
 import CriarConta from './components/CriarConta';
@@ -24,7 +24,7 @@ function App() {
  })
   return (
     <div className={styles}>
-      {location.pathname==='/login'||location.pathname==='/cadastro'?<HeaderAuth/>
+      {location.pathname==='/login'||location.pathname==='/cadastro/'?<HeaderAuth/>
        :<>
        <Header/>
         <HeaderMobile/>
@@ -38,6 +38,7 @@ function App() {
           <Route index element={<Produtos/>}/>
           <Route path=":id" element={<ProdutoSelecionado/>}/>
           <Route path="carrinho" element={<MeusPedidos/>}/>
+          
         </Route>
         <Route path="/" element={<Home />} />
         <Route path="/meuspedidos" element={<MeusPedidosFinalizados/>} />
