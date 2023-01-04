@@ -4,6 +4,7 @@ import { IconContext } from "react-icons";
 import { useState, useEffect } from 'react';
 import tenisAdicionado from '../../assets/images/tenis-prod-adic.png'
 import Botao from '../Botao';
+import { Link } from 'react-router-dom';
 export default function Carrinho() {
     const [comprasAdicionadas, setComprasAdicionadas] = useState([]);
     const [abrirCarrinho, setAbrirCarrinho] = useState(false);
@@ -57,7 +58,7 @@ export default function Carrinho() {
                             </div>
                             <div className={styles.containerBotoes}>
                                 <button className={styles.botao}>Esvaziar</button>
-                                <Botao corFundo={'#C92071'} largura={'124.78px'} texto={'Ver Carrinho'}/>
+                               <Link to='/produtos/carrinho'> <Botao corFundo={'#C92071'} largura={'124.78px'} texto={'Ver Carrinho'}/></Link>
                             </div>
                     </div>
 
