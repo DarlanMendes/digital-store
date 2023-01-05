@@ -1,7 +1,7 @@
 import estilo from './styles.module.scss'
 import img from './assets/White-Sneakers-PNG-Clipart 2.svg'
 import Botao from '../../components/Botao'
-export default function InformacoesPagamento() {
+export default function FinalizarCompraResumo() {
 
     return (
         <div className={estilo.container}>

@@ -8,7 +8,7 @@ import { Routes, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
-import FinalizarCompra from './components/FinalizaCompra'
+import Compra from './pages/Compra'
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
 import CriarConta from './components/CriarConta';
@@ -20,11 +20,12 @@ function App() {
   let local = useLocation()
  const[location,setLocation]=useState(local)
  useEffect(()=>{
+  
     setLocation(local)
- })
+ },[local])
   return (
-    <div className={styles}>
-      {location.pathname==='/login'||location.pathname==='/cadastro/'?<HeaderAuth/>
+    <div className={styles.app}>
+      {location.pathname==='/login'||location.pathname==='/cadastro'?<HeaderAuth/>
        :<>
        <Header/>
         <HeaderMobile/>
@@ -43,12 +44,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/meuspedidos" element={<MeusPedidosFinalizados/>} />
         {/* categorias */}
-        <Route path='/' element={<Login />} />
-        <Route path='cadastro/' >
+        <Route path='/login' element={<Login />} />
+        <Route path='/cadastro' >
           <Route index element={<Cadastro/>}/>
           <Route path=':email' element={<CriarConta/>}/>
         </Route>
-        <Route path='/finalizarcompra' element={<FinalizarCompra />} />
+        <Route path='/finalizarcompra' element={<Compra />} />
       </Routes>
       <Footer />
     </div>
