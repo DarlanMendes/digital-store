@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import faceLogo from '../../assets/images/face-logo.png'
 import Botao from '../Botao'
+import gmailLogo from '../../assets/images/gmail-logo.png'
 
 
 
@@ -24,7 +25,8 @@ export default function CadastroContainer() {
             email,
             password,
         };
-        console.log(email,password)
+
+        console.log(user)
         // dispatch(login(user));
     };
 
@@ -41,10 +43,10 @@ export default function CadastroContainer() {
                 <h3 className={styles.helpPassword}>Esqueci minha senha</h3>
                 <Botao cor={'white'} corFundo={'#C92071'} largura={'523px'} texto={'Acessar conta'} altura={'48px'} />
             </form>
-            <div>
+            <div className={styles.containerLoginAlternative}>
             <h3 className={styles.textLoginAlternative}>Ou faça login com</h3>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src={gmailLogo} className={styles.logoImg} alt="" />
+            <img src={faceLogo} alt="" />
             </div>
        
     </div>)
