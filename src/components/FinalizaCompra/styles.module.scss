@@ -2,7 +2,7 @@
     width: 750px;
     height: 248px;
     padding: 30px;
-
+    background-color: white;
     .titulo {
         font-weight: 700;
         font-size: 14px;
@@ -48,9 +48,8 @@
 
 @media (max-width:900px) {
     .container {
-        width: 375px;
+        width: 100vw;
         height: 176px;
-        border: #EE4266 1px solid;
         .titulo {
             display: none;
             
