@@ -14,7 +14,7 @@ export default function LoginContainer() {
     let navigate = useNavigate()
     
     const usuario = useContext(AuthContext)
-    console.log(usuario.currentUser)
+    
     // const [currentUser, setCurrentUser] = useState({ nome:'fulano', email: 'fulano@digitalstore',password:'123456' });
     const handleChange = (e) => {
         setEmail(e.target.value);

@@ -1,10 +1,11 @@
 import styles from "./styles.module.scss"
 import { useState } from "react"
 import { useParams } from 'react-router-dom';
+import { useEffect } from "react";
 
-export default function InformacoesPessoais() {
+export default function InformacoesPessoais(props) {
     const [params,setParams] = useState(useParams());
-    console.log(params)
+    
     const[infoPessoal,setInfoPessoal]=useState(
         [{titulo:"Nome Completo *", placeholder:"Insira seu nome" ,valor:''},
         {titulo:"CPF *", placeholder:"Insira seu cpf" ,valor:''},
@@ -12,6 +13,15 @@ export default function InformacoesPessoais() {
         {titulo:"Celular *", placeholder:"Insira seu celular" ,valor:''},
         ]
     )
+    useEffect(()=>{
+       props.setContaInfo(
+        {nome:infoPessoal[0].valor,
+            cpf:infoPessoal[1].valor,
+            email:infoPessoal[2].valor,
+            celular:infoPessoal[3].valor}
+       )
+        
+    },[infoPessoal])
     
    
     return (

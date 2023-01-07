@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './styles.module.scss'
-export default function InformacoesEntrega() {
+import { useEffect } from 'react';
+export default function InformacoesEntrega(props) {
     const [infoEntrega, setInfoEntrega] = useState(
         [{ titulo: "Endereço *", placeholder: "Insira seu endereço", valor: '' },
         { titulo: "Bairro *", placeholder: "Insira seu bairro", valor: '' },
@@ -9,6 +10,18 @@ export default function InformacoesEntrega() {
         { titulo: "Complemento *", placeholder: "Insira seu complemento", valor: '' },
         ]
     )
+
+     useEffect(()=>{
+       props.setContaEntrega(
+        {endereco:infoEntrega[0].valor,
+            bairro:infoEntrega[1].valor,
+            cidade:infoEntrega[2].valor,
+            cep:infoEntrega[3].valor,
+            complemento:infoEntrega[4].valor
+        }
+       )
+        
+    },[infoEntrega])
     return (
         <div className={styles.infoEntregaContainer}>
             <h1>Informações de Entrega</h1>
