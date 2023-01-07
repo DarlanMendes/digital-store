@@ -2,6 +2,7 @@ import estilo from './styles.module.scss'
 import Botao from '../../components/Botao'
 import img from './assets/confete.png'
 import imgTenis from './assets/White-Sneakers-PNG-Clipart 2.svg'
+import { Link } from 'react-router-dom'
 
 export default function FinalizarCompra() {
     return (
@@ -127,9 +128,12 @@ export default function FinalizarCompra() {
                     </div>
                 </div>
             </div>
-            <div className={estilo.botao}>
-                <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'100%'} altura={'50px'} texto={'Voltar para Home'} />
-            </div>
+            <Link to='/'>
+                <div className={estilo.botao}>
+                    <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'100%'} altura={'50px'} texto={'Voltar para Home'} />
+                </div>
+
+            </Link>
         </div>
 
     )

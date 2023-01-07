@@ -5,7 +5,7 @@ import Botao from '../Botao'
 import gmailLogo from '../../assets/images/gmail-logo.png'
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../App'
-
+import { Link } from 'react-router-dom'
 
 
 export default function LoginContainer() {
@@ -45,7 +45,7 @@ export default function LoginContainer() {
     return (<div className={styles.containerLogin}>
 
         <h1 className={styles.textMain}>Acesse sua conta</h1>
-        <h3 className={styles.textSubMain}>Novo cliente? Então registre-se <span className={styles.underscore}>aqui.</span></h3>
+        <h3 className={styles.textSubMain}>Novo cliente? Então registre-se <Link to='/cadastro'> <span className={styles.underscore}>aqui.</span></Link></h3>
         <form onSubmit={handleSubmit}>
             <h3 className={styles.indicativeText}>Login *</h3>
             <input type="email" value={email} className={styles.inputLogin} required onChange={(e) => { handleChange(e) }} placeholder='Insira seu login ou email' />

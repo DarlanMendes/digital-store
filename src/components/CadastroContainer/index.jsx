@@ -8,8 +8,10 @@ export default function CadastroContainer() {
     const[email,setEmail]=useState('')
     return (<div className={styles.containerCadastro}>
         <div className={styles.subcontainerPrincipal}>
+           
             <h3 className={styles.criarConta}>Crie sua conta</h3>
-            <p className={styles.conviteAoCadastramento1}>Já possui uma conta? Entre <u>aqui</u>.</p>
+            
+            <p className={styles.conviteAoCadastramento1}>Já possui uma conta? Entre  <Link to='/login'><u>aqui</u></Link>.</p>
             <p className={styles.emailComAsterisco}>Email *</p>
            
            <input type="text" className={styles.campoDeDigitacaoDoEmail} 

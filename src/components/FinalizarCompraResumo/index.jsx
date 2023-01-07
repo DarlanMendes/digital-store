@@ -1,6 +1,7 @@
 import estilo from './styles.module.scss'
 import img from './assets/White-Sneakers-PNG-Clipart 2.svg'
 import Botao from '../../components/Botao'
+import { Link } from 'react-router-dom'
 export default function FinalizarCompraResumo() {
 
     return (
@@ -50,9 +51,11 @@ export default function FinalizarCompraResumo() {
                 </div>
             </div>
             <div>
-                <div className={estilo.botao}>
-                    <Botao cor={'white'} corFundo={'#F6AA1C'} largura={'100%'} altura={'50px'} texto={'Realizar Pagamento'} />
-                </div>
+                <Link to='/comprafinalizada'>
+                    <div className={estilo.botao}>
+                        <Botao cor={'white'} corFundo={'#F6AA1C'} largura={'100%'} altura={'50px'} texto={'Realizar Pagamento'} />
+                    </div>
+                </Link>
             </div>
         </div>)
 

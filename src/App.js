@@ -16,6 +16,7 @@ import HeaderAuth from './components/HeaderAuth';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState, createContext } from 'react';
 import MeusPedidosFinalizados from './components/MeusPedidosFinalizados';
+import CompraRealizada from './components/CompraRealizada'
 export const AuthContext = createContext(null);
 
 
@@ -64,6 +65,7 @@ function App() {
             <Route path=':email' element={<CriarConta />} />
           </Route>
           <Route path='/finalizarcompra' element={<Compra />} />
+          <Route path='/comprafinalizada' element={<CompraRealizada />} />
         </Routes>
         <Footer />
 

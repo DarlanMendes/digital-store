@@ -22,7 +22,7 @@ export default function FinalizarCompra() {
                 </div>
             </div>
             <div className={estilo.botao}>
-                <Link to="/finalizarcompra">
+                <Link to="/comprafinalizada">
                     <Botao cor={'white'}
                         corFundo={'#F6AA1C'}
                         largura={'100%'} altura={'50px'}
