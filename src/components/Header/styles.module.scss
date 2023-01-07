@@ -33,6 +33,7 @@
         right: 28px;
         top: 20.78px;
         color: rgb(102, 102, 102);
+        
     }
 }
 
@@ -82,12 +83,24 @@
 .divBotaoEntrar {
     margin-left: 2.07vw;
 }
-
+.usuarioLogado{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    .usuarioIcon{
+        color: #C92071;
+        font-size:21.8px;
+    }
+    h3{
+        font-size: 14px;
+        color: #474747;
+    }
+}
 
 
 .botoesContainer {
     display: flex;
-    flex-direction: row;
+    
     height: 60px;
     align-items: center;
     margin-left: 3.31vw;
