@@ -1,35 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState,useContext } from 'react'
 import styles from './styles.module.scss'
 import faceLogo from '../../assets/images/face-logo.png'
 import Botao from '../Botao'
 import gmailLogo from '../../assets/images/gmail-logo.png'
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../App'
 
 
 
-export default function CadastroContainer() {
+export default function LoginContainer() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [widthButton, setWidthButton] = useState('')
-
-    useEffect(() => {
-        checkSize()
-    })
-
-
-
-    window.addEventListener("resize", () => {
-        checkSize()
-    })
-
-    const checkSize = () => {
-        if (window.innerWidth < 500) {
-            setWidthButton('255px');
-        } else {
-            setWidthButton('523px');
-        }
-    }
-
-
+    let navigate = useNavigate()
+    
+    const usuario = useContext(AuthContext)
+    console.log(usuario.currentUser)
+    // const [currentUser, setCurrentUser] = useState({ nome:'fulano', email: 'fulano@digitalstore',password:'123456' });
     const handleChange = (e) => {
         setEmail(e.target.value);
     }
@@ -40,16 +26,21 @@ export default function CadastroContainer() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
-        const user = {
-            email,
-            password,
-        };
-
-        console.log(user)
-        // dispatch(login(user));
+        handleLogin()
+        
     };
-
+    
+    function handleLogin(){
+        if(email&&password){
+            //nome generico de usuario para teste do useContext
+           if(email==="fulano@digitalstore.com"&&password==="123456"){
+            //salvar o useContext
+            usuario.setCurrentUser({ nome:'fulano', email: 'fulano@digitalstore'})
+            navigate("/")  //path para home
+           }
+           
+        }
+    }
 
     return (<div className={styles.containerLogin}>
 
@@ -61,7 +52,10 @@ export default function CadastroContainer() {
             <h3 className={styles.indicativeText}>Senha *</h3>
             <input type="password" value={password} className={styles.inputLogin} required onChange={(e) => { handlePasswordChange(e) }} placeholder='Insira sua senha' />
             <h3 className={styles.helpPassword}>Esqueci minha senha</h3>
-            <Botao cor={'white'} corFundo={'#C92071'} largura={widthButton} texto={'Acessar conta'} altura={'48px'} />
+            <div >
+                <Botao cor={'white'} corFundo={'#C92071'} largura={"100%"} texto={'Acessar conta'} altura={'48px'} />
+            </div>
+
         </form>
         <div className={styles.containerLoginAlternative}>
             <div className={styles.divAlternative} >
@@ -69,7 +63,7 @@ export default function CadastroContainer() {
             </div>
             <div className={styles.divLogoAlternative} >
                 <img src={gmailLogo} className={styles.logoImg} alt="" />
-                <img src={faceLogo} alt="" />
+                <img src={faceLogo} className={styles.logoImg} alt="" />
             </div>
         </div>
 

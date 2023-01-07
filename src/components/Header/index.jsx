@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 export default function Header() {
 
         return (
-        
-        
+
+
                 <div className={styles.centralizar}>
 
 
@@ -40,9 +40,12 @@ export default function Header() {
                                                         </Link>
                                                 </div>
 
-                                                <div className={styles.divBotaoEntrar}>
-                                                        <Botao corFundo="#C92071" texto="Entrar" largura="7.87vw" />
-                                                </div>
+                                                <Link to="/login">
+                                                        <div className={styles.divBotaoEntrar}>
+                                                                <Botao corFundo="#C92071" texto="Entrar" largura="7.87vw" />
+                                                        </div>
+                                                </Link>
+
 
                                                 <div className={styles.Carrinho}>
                                                         <Carrinho />

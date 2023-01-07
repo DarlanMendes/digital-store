@@ -1,15 +1,14 @@
+$coeficiente-desk:0.0694vw;
+$coeficiente-mobile:0.2666vw;
 .containerLogin {
    background-color: white;
-   width: 583px;
+   width: calc(583 *$coeficiente-desk);
    height: 560px;
    padding: 30px;
    margin-left: 0px;
 }
 
-img {
-    width: 24px;
-    height: 24px;
-}
+
 
 .textMain {
     font-size: 32px;
@@ -66,8 +65,9 @@ img {
 }
 
 
-input{
+.inputLogin{
     padding: 0px;
+    
 }
 
 ::placeholder{
@@ -79,7 +79,7 @@ input{
 }
 
 .inputLogin{
-    width: 523px;
+    width:100%;
     height: 60px;
     border-radius: 8px;
     color: #474747;
@@ -96,14 +96,17 @@ input{
 }
 
 .logoImg {
-    margin: 0px 20px;
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+    
     cursor: pointer;
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
     .containerLogin {
-        width: 315px;
+        width: calc(315 * $coeficiente-mobile);
         height: 572px;
         margin-left: 0px;
         margin-bottom: 80px;
@@ -111,7 +114,7 @@ input{
     }
 
     .inputLogin {
-        width: 229px;
+        width: 100%;
         height: 60px;
     }
 
