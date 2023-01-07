@@ -1,6 +1,6 @@
 import estilo from './styles.module.scss'
 import Botao from '../Botao'
-
+import { Link } from 'react-router-dom'
 export default function FinalizarCompra() {
     return (
         <div className={estilo.container}>
@@ -22,7 +22,12 @@ export default function FinalizarCompra() {
                 </div>
             </div>
             <div className={estilo.botao}>
-                <Botao cor={'white'} corFundo={'#F6AA1C'} largura={'100%'} altura={'50px'} texto={'Realizar Pagamento'} />
+                <Link to="/finalizarcompra">
+                    <Botao cor={'white'}
+                        corFundo={'#F6AA1C'}
+                        largura={'100%'} altura={'50px'}
+                        texto={'Realizar Pagamento'} />
+                </Link>
             </div>
         </div>
 

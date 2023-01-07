@@ -1,5 +1,5 @@
 import estilo from './styles.module.scss'
-import Resumo from '../../components/ResumoDoPedido'
+import ResumoDoPedido from '../../components/ResumoDoPedido'
 import Carrinho from '../../components/MeuCarrinho'
 import Produto from '../../components/ProdutoCard'
 
@@ -12,7 +12,7 @@ export default function MeusPedidos() {
                         <Carrinho />
                     </div>
                     <div>
-                        <Resumo />
+                        <ResumoDoPedido />
                     </div>
                 </div>
                 <div className={estilo.segundaLinha}>

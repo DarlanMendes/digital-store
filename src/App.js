@@ -1,56 +1,74 @@
 
-import styles from  './App.module.scss';
+import styles from './App.module.scss';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import MeusPedidos from './pages/MeusPedidos';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
-import FinalizarCompra from './pages/FinalizarCompra';
+import Compra from './pages/Compra'
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
 import CriarConta from './components/CriarConta';
 import HeaderAuth from './components/HeaderAuth';
 import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, createContext } from 'react';
 import MeusPedidosFinalizados from './components/MeusPedidosFinalizados';
+export const AuthContext = createContext(null);
+
+
 function App() {
+
+  //localização 
   let local = useLocation()
- const[location,setLocation]=useState(local)
- useEffect(()=>{
+  const [location, setLocation] = useState(local)
+
+  //cria contexto p/ usuario
+  
+  
+  //inicia com valor nulo
+  const [currentUser, setCurrentUser] = useState({ nome:'', email: '',password:'' });
+
+  useEffect(() => {
+
     setLocation(local)
- })
+  }, [local])
   return (
-    <div className={styles}>
-      {location.pathname==='/login'||location.pathname==='/cadastro'?<HeaderAuth/>
-       :<>
-       <Header/>
-        <HeaderMobile/>
-       </>
-      }
-     
-      
-      
-      <Routes>
-        <Route path="/produtos" >
-          <Route index element={<Produtos/>}/>
-          <Route path=":id" element={<ProdutoSelecionado/>}/>
-          <Route path="carrinho" element={<MeusPedidos/>}/>
-        </Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/meuspedidos" element={<MeusPedidosFinalizados/>} />
-        {/* categorias */}
-        <Route path='/' element={<Login />} />
-        <Route path='cadastro/' >
-          <Route index element={<Cadastro/>}/>
-          <Route path=':email' element={<CriarConta/>}/>
-        </Route>
-        <Route path='/finalizarcompra' element={<FinalizarCompra />} />
-      </Routes>
-      <Footer />
-    </div>
+    <AuthContext.Provider value={{currentUser,setCurrentUser}}>
+      <div className={styles.app}>
+
+        {location.pathname === '/login' || location.pathname === '/cadastro' ? <HeaderAuth />
+          : <>
+            <Header />
+            <HeaderMobile />
+          </>
+        }
+
+
+
+        <Routes>
+          <Route path="/produtos" >
+            <Route index element={<Produtos />} />
+            <Route path=":id" element={<ProdutoSelecionado />} />
+            <Route path="carrinho" element={<MeusPedidos />} />
+
+          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/meuspedidos" element={<MeusPedidosFinalizados />} />
+          {/* categorias */}
+          <Route path='/login' element={<Login />} />
+          <Route path='/cadastro' >
+            <Route index element={<Cadastro />} />
+            <Route path=':email' element={<CriarConta />} />
+          </Route>
+          <Route path='/finalizarcompra' element={<Compra />} />
+        </Routes>
+        <Footer />
+
+      </div>
+    </AuthContext.Provider>
   );
 }
 

@@ -1,0 +1,41 @@
+.loginPage {
+    background-color: #BCBDF4;
+    height: 100vh;
+    width: 100%;
+    padding: 200px 6.94vw 0 6.94vw;
+    display: flex;
+    
+}
+
+.tenis1 {
+    top: 232px;
+    left: 50.48vw;
+    position: absolute;
+    width: 25.76vw;
+}
+
+
+.tenis2 {
+    top: 345px;
+    left: 68.95vw;
+    position: absolute;
+    width: 25.76vw;
+}
+
+
+@media screen and (max-width:900px) {
+    .tenis1 {
+        display: none;
+    }
+
+    .tenis2 {
+        display: none;
+    }
+
+    .loginPage {
+        width: 100%;
+        height: 715px;
+        padding-top: 63px;
+        justify-content: center;
+    }
+}

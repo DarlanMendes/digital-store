@@ -1,5 +1,31 @@
-.containerCadastro{
-    background-color:#BCBDF4 ;
-    height: 100vh;
+.containerCadastro {
+    background-color: #BCBDF4;
     padding-top: 200px;
+    display: flex;
+    width: 100vw;
+
+    .imgTenisEsq {
+        top: 232px;
+        left: 50.48vw;
+        position: absolute;
+        width: 25.76vw;
+    }
+
+    .imgTenisDir {
+        top: 345px;
+        left: 68.95vw;
+        position: absolute;
+        width: 25.76vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .containerCadastro {
+        padding-top: 127px;
+        justify-content: center;
+        .imgTenisEsq,
+        .imgTenisDir {
+            display: none;
+        }
+    }
 }

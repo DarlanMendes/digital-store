@@ -158,7 +158,8 @@ export default function MeusPedidos() {
                     <div className={estilo.freteMobile}>
                         <label htmlFor="">Calcular frete</label>
                         <div>
-                            <input type="text" name="" id="" placeholder="Insira seu CEP" /> <Botao cor={'#C92071'} corFundo={'#F5F5F5'} largura={'255px'} altura={'60px'} texto={'OK'} />
+                            <input type="text" name="" id="" placeholder="Insira seu CEP" /> 
+                            <Botao cor={'#C92071'} corFundo={'#F5F5F5'} largura={'255px'} altura={'60px'} texto={'OK'} />
                         </div>
                     </div>
                 </div>
