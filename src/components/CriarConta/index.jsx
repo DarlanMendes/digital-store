@@ -17,7 +17,7 @@ export default function CriarConta() {
                 </label>
             </div>
             <div className={styles.Botao}>
-                <Botao texto={"Criar Conta"} largura={"750px"} corFundo={"#C92071"} altura={"48px"}/>
+                <Botao texto={"Criar Conta"} largura={"100%"} corFundo={"#C92071"} altura={"48px"}/>
             </div>
             
 

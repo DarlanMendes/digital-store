@@ -39,7 +39,7 @@ function App() {
     <AuthContext.Provider value={{currentUser,setCurrentUser}}>
       <div className={styles.app}>
 
-        {location.pathname === '/login' || location.pathname === '/cadastro' ? <HeaderAuth />
+        {location.pathname === '/login' || location.pathname.includes('/cadastro') ? <HeaderAuth />
           : <>
             <Header />
             <HeaderMobile />

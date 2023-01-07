@@ -31,7 +31,7 @@
             border-radius: 8px;
             border: none;
             background-color: rgb(71,71,71,0.04);
-            padding: 16px 10.82px;
+            padding: 1.11vw 10.82px;
            &::placeholder
             {
                 padding: 16px 10.82px;
@@ -40,4 +40,15 @@
             }
         }
     }
+}
+@media (max-width:900px){
+    .infoPessoaisContainer{
+        width: math.div(315px,375px) * 100vw;
+        .infoPessoalInput{
+            input{
+            width: 100%;
+            }
+        }
+    }
+
 }

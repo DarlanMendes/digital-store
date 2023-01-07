@@ -40,3 +40,14 @@
         }
     }
 }
+@media (max-width:900px){
+    .infoEntregaContainer{
+        width: math.div(315px,375px) * 100vw;
+        .infoEntregaInput{
+            input{
+            width: 100%;
+            }
+        }
+    }
+
+}
