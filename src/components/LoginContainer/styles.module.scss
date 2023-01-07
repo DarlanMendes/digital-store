@@ -3,7 +3,7 @@
    width: 583px;
    height: 560px;
    padding: 30px;
-   margin-left: 100px;
+   margin-left: 0px;
 }
 
 img {
@@ -98,4 +98,53 @@ input{
 .logoImg {
     margin: 0px 20px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:600px){
+    .containerLogin {
+        width: 315px;
+        height: 572px;
+        margin-left: 30px;
+        margin-bottom: 80px;
+        
+    }
+
+    .inputLogin {
+        width: 229px;
+        height: 60px;
+    }
+
+    .textMain{
+        font-size:  22px;
+        line-height: 34px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .textSubMain{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+        font-weight: 400;
+    }
+
+    .textLoginAlternative{
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    .containerLoginAlternative {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+ 
 }

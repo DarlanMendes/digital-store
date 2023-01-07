@@ -8,7 +8,7 @@
 }
 
 .tenis1 {
-    width: 266px;
+    width: 276px;
     height: 483px;
     margin-top: -50px;
     margin-left: 60px;
@@ -16,7 +16,26 @@
 
 
 .tenis2 {
-    width: 262px;
+    width: 282px;
     height: 515px;
     margin-top: 50px;
+}
+
+
+@media screen and (max-width:600px) {
+    .tenis1 {
+        display: none;
+    }
+
+    .tenis2 {
+        display: none;
+    }
+
+    .loginPage {
+        width: 100wh;
+        height: 715px;
+        padding-top: 63px;
+       
+    
+    }
 }
