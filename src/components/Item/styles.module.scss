@@ -1,0 +1,106 @@
+.list2group2{
+    padding: 20px 0px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // word-wrap: break-word;
+
+    
+    .statuslist2 {
+        
+        height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.75px;
+        color: #8F8F8F;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+
+        .statusdinamic{
+            display: none;
+        }
+    }
+
+}
+
+.itemsellgroup1{
+    
+    display: flex;
+    width: 70%;
+}
+
+.itemimglist {
+    width: 71.18px;
+    height: 58px;
+    background: #E2E3FF;
+    box-shadow: 0px 2.66916px 16.6822px rgba(0, 0, 0, 0.05);
+    border-radius: 2.66916px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.itemimg {
+    width: 50.63px;
+    height: 25.19px;
+
+    background: #E2E3FF;
+    border-radius: 2.66916px;
+   
+}
+
+.itemtitle{
+    width: auto;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    color: #1F1F1F;
+    margin-left: 20px;
+    
+    
+}
+
+.itemsubtitle{
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #8F8F8F;
+    margin-left: 20px;
+    
+    
+}
+
+@media (max-width: 430px) {
+
+    .itemsellgroup1{
+        width: 100%;
+    }
+
+    .list2group2{
+      flex-wrap: wrap;
+      
+        .statuslist2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .statusdinamic{
+                display: block;
+            }
+        }
+    
+    }
+   
+   
+}
