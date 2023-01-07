@@ -8,18 +8,23 @@ import { Routes, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer';
-import FinalizarCompra from './pages/FinalizarCompra';
+import Compra from './pages/Compra'
 import ProdutoSelecionado from './components/ProdutoSelecionado';
 import HeaderMobile from './components/HeaderMobile';
 import CriarConta from './components/CriarConta';
 import HeaderAuth from './components/HeaderAuth';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import MeusPedidosFinalizados from './components/MeusPedidosFinalizados';
 function App() {
- const[location,setLocation]=useState(useLocation())
- console.log(location)
+  let local = useLocation()
+ const[location,setLocation]=useState(local)
+ useEffect(()=>{
+  
+    setLocation(local)
+ },[local])
   return (
-    <div className={styles}>
+    <div className={styles.app}>
       {location.pathname==='/login'||location.pathname==='/cadastro'?<HeaderAuth/>
        :<>
        <Header/>
@@ -33,16 +38,18 @@ function App() {
         <Route path="/produtos" >
           <Route index element={<Produtos/>}/>
           <Route path=":id" element={<ProdutoSelecionado/>}/>
+          <Route path="carrinho" element={<MeusPedidos/>}/>
+          
         </Route>
-        <Route path="/home" element={<Home />} />
-        <Route path="/meuspedidos" element={<MeusPedidos />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/meuspedidos" element={<MeusPedidosFinalizados/>} />
         {/* categorias */}
-        <Route path='/' element={<Login />} />
-        <Route path='cadastro/' >
+        <Route path='/login' element={<Login />} />
+        <Route path='/cadastro' >
           <Route index element={<Cadastro/>}/>
           <Route path=':email' element={<CriarConta/>}/>
         </Route>
-        <Route path='/finalizarcompra' element={<FinalizarCompra />} />
+        <Route path='/finalizarcompra' element={<Compra />} />
       </Routes>
       <Footer />
     </div>

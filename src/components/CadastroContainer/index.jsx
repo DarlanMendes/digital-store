@@ -16,11 +16,11 @@ export default function CadastroContainer() {
            placeholder='Insira seu email' onChange={(e)=>{setEmail(e.target.value)}} />
            
            <Link to={'/cadastro/'+email}> 
-            <Botao cor={'white'} corFundo={'#C92071'} largura={'523px'} altura={'48px'} texto={'Criar Conta'} />
+            <Botao cor={'white'} corFundo={'#C92071'} largura={'100%'} altura={'48px'} texto={'Criar Conta'} />
             </Link>
         </div>
         <div className={styles.subcontainerSecundario}>
-            <p className={styles.conviteAoCadastramento2}>Ou faça login com</p>
+            <span>Ou faça login com</span>
             <img src={gmailLogo} className={styles.iconeGmail} alt="logo gmail" />
             <img src={faceLogo} className={styles.iconeFacebook} alt="logo facebook" />
         </div>

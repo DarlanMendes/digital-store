@@ -1,5 +1,5 @@
 .container {
-    width: 750px;
+    width: 52.08vw;
     height: 515px;
     padding: 30px;
     border-radius: 4px;
@@ -31,7 +31,7 @@
             line-height: 22px;
             color: #474747;
             margin-bottom: 20px;
-
+            display: flex;
             input[type="radio"] {
                 width: 22px;
                 height: 22px;
@@ -84,10 +84,12 @@
         display: flex;
 
         .cartao {
+            margin-right: 26px;
             .tituloCartao {
                 font-weight: 700;
                 font-size: 12px;
                 line-height: 24px;
+                
             }
 
         }
@@ -162,6 +164,8 @@
             flex-direction: column;
 
             .inputsFormaDePagamento {
+                flex-direction: column;
+                
                 .inputCartao {
                     margin-bottom: 20px;
                 }

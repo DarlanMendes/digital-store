@@ -1,5 +1,5 @@
 export default function FinalizarCompra(){
-    return(<>
+    return(<div>
     FinalizarCompra
-    </>)
+    </div>)
 }

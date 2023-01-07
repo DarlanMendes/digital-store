@@ -3,7 +3,13 @@ import img from './assets/White-Sneakers-PNG-Clipart 2.png'
 import { useState } from "react"
 export default function ProdutoHome() {
 
-    let imagens = [{ img }, { img }, { img }, { img }, { img }];
+    let imagens = [{ tenis: { img }, bc: "#E2E3FF" },
+    { tenis: { img }, bc: "#FFC0BC" },
+    { tenis: { img }, bc: "#DEC699" },
+    { tenis: { img }, bc: "#E8DFCF" },
+    { tenis: { img }, bc: "#E8DFCF" }
+    ]
+
     const [imagem, setImagem] = useState(0)
 
     return (
@@ -35,15 +41,15 @@ export default function ProdutoHome() {
                 <div className={estilo.imgSecundarias}>
                     {
                         imagens && imagens.map((imagemProd, index) => (
-                            <div className={estilo.img} key={index}>
-                                <div style={imagem === index ? { border: "2px solid #C92071", boxShadow: "0px 4px 25px rgba(0, 0, 0, 0.05)" } : { border: "none" }} onClick={() => {
-                                }}><img src={img} />
+                            <div className={estilo.img} key={index} style={imagem === index ? { border: "1px solid #C92071", backgroundColor: imagemProd.bc } : { backgroundColor: imagemProd.bc, border: "none" }}>
+                                <div style={imagem === index ? { boxShadow: "0px 4px 25px rgba(0, 0, 0, 0.05)" } : { border: "none" }}>
+                                    <img src={img} />
                                 </div>
                             </div>
                         ))
                     }
+                </div>
             </div>
-        </div>
         </div >
 
     )

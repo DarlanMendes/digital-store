@@ -1,0 +1,74 @@
+.container {
+    background-color: #f9f8fe;
+
+    .subContainer {
+        display: flex;
+        margin: 0 101px 0 101px;
+        justify-content: space-between;
+        .colunaInformacoes {
+                margin-top: 250px;
+            .titulo {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 1px;
+                color: #1F1F1F;
+                margin-bottom: 30px;
+            }
+
+            .InformacoesPessoais {
+                margin-bottom: 10px;
+            }
+
+            .InformacoesDeEntrega {
+                margin-bottom: 10px;
+            }
+
+            .InformacoesPagamento {
+                margin-bottom: 10px;
+            }
+
+            .FinalizarCompra {
+                margin-bottom: 176px;
+            }
+        }
+
+        .colunaResumo {
+            margin-top: 315px;
+        }
+        .FinalizarCompraMedia{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        .subContainer{
+            flex-direction: column;
+            justify-content: unset;
+            align-items: center;
+            margin: 0;
+            .colunaInformacoes{
+                margin-top: 130px;
+                .titulo{
+                    text-align: center;
+                }
+                .FinalizarCompra{
+                    display: none;
+                }
+            }
+            .colunaResumo{
+                margin-top: 30px;
+                margin-bottom: 100px;
+            }
+            .FinalizarCompraMedia{
+                display: block;
+            }
+        }
+    
+    }
+    
+}

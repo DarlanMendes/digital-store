@@ -1,19 +1,39 @@
 .containerCadastro {
     height: 399px;
-    width: 583px;
+    width: 40.48vw;
     border-radius: 4px;
     padding: 30px;
     background-color: white; 
-    margin-left: 100px;
-    margin-bottom: 446px;
+    margin-left: 6.94vw;
+    margin-bottom: 324px;
 }
 
 .subcontainerSecundario {
+    position:static ;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-left: 212px;
+    gap:20px;
     margin-top: 30px;
+    span{
+        font-size:16px;
+        font-weight: 400;
+        color:#474747
+    }
+    .iconeGmail {
+        height: 23.85px;
+        width: 24px;
+       
+        border-radius: 0px;
+    }
+    
+    .iconeFacebook {
+        height: 23.85px;
+        width: 24px;
+       
+        border-radius: 0px;
+    }
 }
 
 .criarConta {
@@ -60,7 +80,7 @@ u {
 
 .campoDeDigitacaoDoEmail {
     margin-bottom: 30px;
-    width: 523px;
+    width: 36.32vw;
 }
 
 input {
@@ -86,20 +106,28 @@ input {
     left: 250px;
 }
 
-.iconeGmail {
-    height: 23.85px;
-    width: 24px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-    margin-left: 75px;
-    margin-right: 25px;
-}
-
-.iconeFacebook {
-    height: 23.85px;
-    width: 24px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
+@media screen and (max-width:900px) {
+    .containerCadastro {
+        width:315px;
+        height:411px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 82px;
+        input{
+            width:255px;
+        }
+        .criarConta{
+            font-size: 22px;
+            margin-bottom: 0;
+            line-height: 34px;
+        }
+        .conviteAoCadastramento1{
+            font-size: 14px;
+            text-align: center;
+        }
+        .subcontainerSecundario{
+            font-size: 14px;
+        }
+    }
 }

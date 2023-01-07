@@ -1,7 +1,7 @@
 import estilo from './styles.module.scss'
 import Botao from '../Botao'
-
-export default function MeusPedidos() {
+import { Link } from 'react-router-dom'
+export default function ResumoDoPedido() {
     return (<div>
         <div className={estilo.containerGeral}>
 
@@ -26,9 +26,11 @@ export default function MeusPedidos() {
                         <div>R$ 219,00</div>
                     </div>
                     <div className={estilo.parcelamento}> ou 10x de R$ 21,00 sem juros</div>
-                    <div className={estilo.botao}>
-                        <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'274px'} altura={'40px'} texto={'Continuar'} />
-                    </div>
+                    <Link to={'/finalizarcompra'}>
+                        <div className={estilo.botao}>
+                            <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'274px'} altura={'40px'} texto={'Continuar'} />
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className={estilo.containerTotal}>
@@ -37,10 +39,17 @@ export default function MeusPedidos() {
                         <label htmlFor="">Total</label>
                         <div>R$ 219,00</div>
                     </div>
+
                     <div className={estilo.parcelamento}> ou 10x de R$ 21,00 sem juros</div>
-                    <div className={estilo.botao}>
-                        <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'calc(100%)'} altura={'40px'} texto={'Continuar'} />
-                    </div>
+
+
+                    <Link to={'/finalizarcompra'}>
+                        <div className={estilo.botao} onClick={() => { console.log('clicou') }}>
+                            <Botao cor={'#F5F5F5'} corFundo={'#F6AA1C'} largura={'calc(100%)'} altura={'40px'} texto={'Continuar'} />
+                        </div>
+                    </Link>
+
+
                 </div>
             </div>
         </div>

@@ -89,12 +89,12 @@ export default function ProdutoHome() {
                     }
                 </div>
             </div>
-            <Link to='/meuspedidos'>
+            <Link to='/produtos/carrinho'>
                 <div className={estilo.botaoNormal}>
                     < Botao cor={'#F5F5F5'} corFundo={'#FFB31F'} largura={'220px'} altura={'48px'} texto={'COMPRAR'} />
                 </div>
             </Link>
-            <Link to='/meuspedidos'>
+            <Link to='/produtos/carrinho'>
                 <div className={estilo.botaoMedia}>
                     < Botao cor={'#F5F5F5'} corFundo={'#FFB31F'} largura={'335px'} altura={'48px'} texto={'COMPRAR'} />
                 </div>
