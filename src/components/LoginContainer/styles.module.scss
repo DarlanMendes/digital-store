@@ -1,11 +1,150 @@
 .containerLogin {
-    background-color: blue;
-    height:200px;
-    h1{
-        color:white;
-    }
-    img{
-        height:30px;
+   background-color: white;
+   width: 583px;
+   height: 560px;
+   padding: 30px;
+   margin-left: 0px;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+.textMain {
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
+}
+
+.textSubMain{
+    color: #474747;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.textLoginAlternative{
+    color: #474747;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.underscore{
+    text-decoration: underline;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.indicativeText {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: #474747;
+    margin-bottom: 5px;
+}
+
+.helpPassword{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: #474747;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+input{
+    padding: 0px;
+}
+
+::placeholder{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.75;
+    
+}
+
+.inputLogin{
+    width: 523px;
+    height: 60px;
+    border-radius: 8px;
+    color: #474747;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.containerLoginAlternative {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.logoImg {
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:600px){
+    .containerLogin {
+        width: 315px;
+        height: 572px;
+        margin-left: 0px;
+        margin-bottom: 80px;
+        
     }
 
+    .inputLogin {
+        width: 229px;
+        height: 60px;
+    }
+
+    .textMain{
+        font-size:  22px;
+        line-height: 34px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .textSubMain{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+        font-weight: 400;
+    }
+
+    .textLoginAlternative{
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    .containerLoginAlternative {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+ 
 }
