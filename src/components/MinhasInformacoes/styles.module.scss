@@ -1,0 +1,54 @@
+.minhasInformacoesContainer{
+    
+    padding: 30px;
+    width:890px;
+    background-color: white;
+    hr{
+        margin:20px 0;
+    }
+    .titulo{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size:14px ;
+        }
+        span{
+            color: #C92071;
+            font-size: 14px;
+            width:86px;
+            text-align: center;
+            text-decoration: underline;
+            height: 22px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .infoPessoais{
+        font-size:16px;
+        margin-top: 10px;
+        
+        .subContainerInfoPessoais{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: space-between;
+            h4{
+                margin-right:10px;
+                color: #8F8F8F;
+                font-size: 14px;
+            }
+            span{
+                color:#1F1F1F;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .minhasInformacoesContainer{
+    margin:0 30px;
+    }
+}
