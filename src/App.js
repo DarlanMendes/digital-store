@@ -18,7 +18,7 @@ import { useEffect, useState, createContext } from 'react';
 import MeusPedidosFinalizados from './components/MeusPedidosFinalizados';
 import CompraRealizada from './components/CompraRealizada'
 export const AuthContext = createContext(null);
-
+export const SearchContext = createContext(null)
 
 function App() {
 
@@ -31,13 +31,14 @@ function App() {
   
   //inicia com valor nulo
   const [currentUser, setCurrentUser] = useState({ nome:'', email: '',password:'' });
-
+  const [search, setSearch] = useState('')
   useEffect(() => {
 
     setLocation(local)
   }, [local])
   return (
     <AuthContext.Provider value={{currentUser,setCurrentUser}}>
+      <SearchContext.Provider value={{search,setSearch}}>
       <div className={styles.app}>
 
         {location.pathname === '/login' || location.pathname.includes('/cadastro') ? <HeaderAuth />
@@ -70,6 +71,7 @@ function App() {
         <Footer />
 
       </div>
+      </SearchContext.Provider>
     </AuthContext.Provider>
   );
 }

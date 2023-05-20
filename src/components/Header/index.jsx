@@ -8,12 +8,13 @@ import Botao from "../Botao";
 import Carrinho from "../Carrinho"
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import { AuthContext } from '../../App';
+import { AuthContext, SearchContext } from '../../App';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
 export default function Header() {
         const usuario = useContext(AuthContext);
+        const search = useContext(SearchContext)
         const [logado, setLogado] = useState(false);
 
 
@@ -23,7 +24,7 @@ export default function Header() {
                 } else {
                         setLogado(false)
                 }
-        }, [usuario])
+        }, [usuario,search])
 
         return (
 
@@ -42,7 +43,7 @@ export default function Header() {
                                         </div>
 
                                         <div className={styles.inputContainer}>
-                                                <input type="text" className={styles.inputBuscaHome} placeholder="Pesquisar produto..." />
+                                                <input type="text" className={styles.inputBuscaHome} placeholder="Pesquisar produto..." onChange={(e)=>{search.setSearch(e.target.value)}}/>
                                                 
                                                         <div>
                                                                 <CiSearch />
